@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	 
+	<constant name="struts.objectFactory" value="spring" />
+	 
+	<constant name="struts.action.extension" value="action" />
+	 
+	<constant name="struts.devMode" value="true" />
+	 
+	<constant name="struts.configuration.xml.reload" value="true" />
+ 
+	<constant name="struts.serve.static.browserCache" value="false" />
+	 
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	 
+	<constant name="struts.i18n.reload" value="true" />
+	 
+	<constant name="struts.multipart.maxSize" value="104857600" />
+ 
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	 
+	<constant name="struts.enable.SlashesInActionNames" value="false" />
+	 
+	<constant name="struts.tag.altSyntax" value="true" />
+	 
+	<constant name="struts.dispatcher.parametersWorkaround" value="false" />
+
+	<package name="basePackage" extends="struts-default">
+	</package>
+
+</struts>
