@@ -1,4 +1,4 @@
-﻿<%@ page language="java" pageEncoding="UTF-8"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <script type="text/javascript">
 	$(function() {
@@ -15,7 +15,7 @@
 				});
 			}
 		});
-		$('#user_login_loginForm input').bind('keyup', function(event) {/*   */
+		$('#user_login_loginForm input').bind('keyup', function(event) {/* enter to submit */
 			if (event.keyCode == '13') {
 				$('#user_login_loginForm').submit();
 			}
@@ -42,13 +42,13 @@
 	<form id="user_login_loginForm" method="post">
 		<table>
 			<tr>
-				<th>name</th>
-				<td><input name="name" class="easyui-validatebox" data-options="required:true,missingMessage:'required'" />
+				<th>Username</th>
+				<td><input name="name" class="easyui-validatebox" data-options="required:true,missingMessage:'Username required'" />
 				</td>
 			</tr>
 			<tr>
-				<th>password</th>
-				<td><input type="password" name="pwd" class="easyui-validatebox" data-options="required:true,missingMessage:'required'" />
+				<th>Password</th>
+				<td><input type="password" name="pwd" class="easyui-validatebox" data-options="required:true,missingMessage:'Password required'" />
 				</td>
 			</tr>
 		</table>

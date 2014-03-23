@@ -1,8 +1,8 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<div class="easyui-panel" data-options="title:'navigator',border:false,fit:true">
+<%@ page language="java" pageEncoding="UTF-8"%>
+<div class="easyui-panel" data-options="title:'Navigator',border:false,fit:true">
 	<div class="easyui-accordion" data-options="fit:true,border:false">
-		<div title="system" data-options="iconCls:'icon-save'">
-			<ul id="index_tree" class="easyui-tree" data-options="
+		<div title="System" data-options="iconCls:'icon-save'">
+			<ul id="layout_west_tree" class="easyui-tree" data-options="
 					url : '${pageContext.request.contextPath}/menuAction!getAllTreeNode.action',
 					parentField : 'pid',
 					lines : true,

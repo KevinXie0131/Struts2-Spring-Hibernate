@@ -1,0 +1,40 @@
+[{    
+    "id":1,    
+    "text":"Folder1",    
+    "iconCls":"icon-save",    
+    "children":[{ 
+    	"id":10,    
+        "text":"File1",    
+        "checked":true   
+    },{    
+    	"id":2,
+        "text":"Books",  
+        "iconCls":"icon-reload",      
+        "state":"open",    
+        "attributes":{    
+            "url":"/demo/book/abc",    
+            "price":100    
+        },    
+        "children":[{   
+        	"id":3, 
+            "text":"PhotoShop",    
+            "checked":true   
+        },{    
+            "id":4,    
+            "text":"Sub Bookds",    
+            "state":"closed"   
+        }]    
+    }]    
+},{    
+	"id":5,
+    "text":"Languages",    
+    "state":"closed",    
+    "children":[{    
+    	"id":6,
+        "text":"Java"   
+    },{ 
+    	"id":7,   
+        "text":"C#"   
+    }]    
+}]  
+

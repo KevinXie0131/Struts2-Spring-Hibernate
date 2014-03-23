@@ -1,0 +1,15 @@
+package rml.test;
+
+import org.junit.Test;
+
+import rml.service.TestService;
+import rml.service.impl.TestServiceImpl;
+
+public class Test1 {
+
+	@Test
+	public void test(){
+		TestService testService = new TestServiceImpl();
+		testService.test();
+	}
+}

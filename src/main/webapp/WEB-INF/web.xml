@@ -1,13 +1,14 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 	<display-name></display-name>
-	<!-- spring   -->
+  
+  <!-- spring config -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring.xml,classpath:spring-hibernate.xml</param-value>
 	</context-param>
-	<!-- openSessionInView  -->
+	<!-- openSessionInView config -->
 	<filter>
 		<filter-name>openSessionInViewFilter</filter-name>
 		<filter-class>org.springframework.orm.hibernate4.support.OpenSessionInViewFilter</filter-class>
@@ -16,7 +17,7 @@
 			<param-value>true</param-value>
 		</init-param>
 	</filter>
-	<!-- Struts2  -->
+	<!-- Struts2 config -->
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
@@ -29,15 +30,25 @@
 		<filter-name>struts2</filter-name>
 		<url-pattern>*.action</url-pattern>
 	</filter-mapping>
-	<!-- spring  -->
+	<!-- spring listener -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<!--   -->
+	<!-- repaire database listener-->
 	<listener>
-		<listener-class>sy.listener.RepairListener</listener-class>
+		<listener-class>rml.listener.RepairListener</listener-class>
 	</listener>
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>
 	</welcome-file-list>
+  
+  <servlet>
+    <servlet-name>PageGrid</servlet-name>
+    <servlet-class>com.servlet.PageGrid</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PageGrid</servlet-name>
+    <url-pattern>/PageGrid</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

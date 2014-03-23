@@ -1,7 +1,7 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" pageEncoding="UTF-8"%>
 <script type="text/javascript">
 	function addTab(opts) {
-		var t = $('#index_centerTabs');
+		var t = $('#layout_center_tabs');
 		if (t.tabs('exists', opts.title)) {
 			t.tabs('select', opts.title);
 		} else {
@@ -9,6 +9,6 @@
 		}
 	}
 </script>
-<div id="index_centerTabs" class="easyui-tabs" data-options="fit:true,border:false" style="overflow: hidden;">
-	<div title="main"></div>
+<div id="layout_center_tabs" class="easyui-tabs" data-options="fit:true,border:false" style="overflow: hidden;">
+	<div title="Home"></div>
 </div>
