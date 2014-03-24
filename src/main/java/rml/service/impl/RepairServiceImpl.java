@@ -42,7 +42,6 @@ public class RepairServiceImpl implements RepairServiceI {
 	synchronized public void repair() {
 
 		repairUser();
-
 		repairMenu();
 
 	}
@@ -108,5 +107,6 @@ public class RepairServiceImpl implements RepairServiceI {
 		admin.setModifydatetime(new Date());
 		userDao.saveOrUpdate(admin);
 	}
+
 
 }

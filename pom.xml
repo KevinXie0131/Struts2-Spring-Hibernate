@@ -33,6 +33,7 @@
 		</repository>
 	</repositories>
 
+	<!-- Encoding -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -44,6 +45,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+		<!-- jsp (scope:provided, servlet implemented by tomcat) -->
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
@@ -56,7 +58,7 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.1.24</version>
 		</dependency>
-		<!-- oracle  -->
+		<!-- oracle (can not download from Maven repository)  -->
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc14</artifactId>
@@ -74,7 +76,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.7.0</version>
 		</dependency>
-		<!-- servlet -->
+		<!-- servlet (scope:provided, servlet implemented by tomcat) -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -105,6 +107,7 @@
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
 			<version>2.3.4.1</version>
+			<!-- excluse javassist (conflict with hibernate) -->
 			<exclusions>
 				<exclusion>
 					<groupId>javassist</groupId>

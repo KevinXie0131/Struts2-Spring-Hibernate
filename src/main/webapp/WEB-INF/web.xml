@@ -3,7 +3,7 @@
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 	<display-name></display-name>
   
-  <!-- spring config -->
+  <!-- spring config (read two xml files) -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:spring.xml,classpath:spring-hibernate.xml</param-value>
@@ -22,6 +22,7 @@
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
 	</filter>
+	<!-- openSessionInViewFilter should be before struts2-->
 	<filter-mapping>
 		<filter-name>openSessionInViewFilter</filter-name>
 		<url-pattern>*.action</url-pattern>
@@ -48,7 +49,7 @@
 		<error-code>500</error-code>
 		<location>/error/500.jsp</location>
 	</error-page>
-	
+	<!-- default homepage -->
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>
 	</welcome-file-list>

@@ -619,3 +619,68 @@
 [WARN][2014-03-23 14:09:03,015][rml.test.TestLog]log warn
 [ERROR][2014-03-23 14:09:03,015][rml.test.TestLog]log error
 [INFO][2014-03-23 14:09:03,015][rml.test.TestSpring]info
+[ERROR][2014-03-23 14:53:17,125][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-23 14:53:17,140][rml.test.TestLog]log info
+[WARN][2014-03-23 14:53:17,140][rml.test.TestLog]log warn
+[ERROR][2014-03-23 14:53:17,140][rml.test.TestLog]log error
+[INFO][2014-03-23 14:53:17,140][rml.test.TestSpring]info
+[ERROR][2014-03-23 15:44:44,515][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-23 15:44:44,515][rml.test.TestLog]log info
+[WARN][2014-03-23 15:44:44,515][rml.test.TestLog]log warn
+[ERROR][2014-03-23 15:44:44,515][rml.test.TestLog]log error
+[INFO][2014-03-23 15:44:44,531][rml.test.TestSpring]info
+[ERROR][2014-03-23 16:02:00,453][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-23 16:02:00,468][rml.test.TestLog]log info
+[WARN][2014-03-23 16:02:00,468][rml.test.TestLog]log warn
+[ERROR][2014-03-23 16:02:00,468][rml.test.TestLog]log error
+[INFO][2014-03-23 16:02:00,468][rml.test.TestSpring]info
+[ERROR][2014-03-23 18:09:17,687][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-23 18:09:17,703][rml.test.TestLog]log info
+[WARN][2014-03-23 18:09:17,703][rml.test.TestLog]log warn
+[ERROR][2014-03-23 18:09:17,703][rml.test.TestLog]log error
+[INFO][2014-03-23 18:09:17,703][rml.test.TestSpring]info
+[ERROR][2014-03-23 18:15:05,765][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-23 18:15:05,765][rml.test.TestLog]log info
+[WARN][2014-03-23 18:15:05,765][rml.test.TestLog]log warn
+[ERROR][2014-03-23 18:15:05,765][rml.test.TestLog]log error
+[INFO][2014-03-23 18:15:05,781][rml.test.TestSpring]info
+[ERROR][2014-03-24 00:54:05,812][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 00:54:05,828][rml.test.TestLog]log info
+[WARN][2014-03-24 00:54:05,828][rml.test.TestLog]log warn
+[ERROR][2014-03-24 00:54:05,828][rml.test.TestLog]log error
+[INFO][2014-03-24 00:54:05,828][rml.test.TestSpring]info
+[ERROR][2014-03-24 00:58:12,671][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 00:58:12,671][rml.test.TestLog]log info
+[WARN][2014-03-24 00:58:12,671][rml.test.TestLog]log warn
+[ERROR][2014-03-24 00:58:12,671][rml.test.TestLog]log error
+[INFO][2014-03-24 00:58:12,687][rml.test.TestSpring]info
+[ERROR][2014-03-24 01:00:57,625][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 01:00:57,625][rml.test.TestLog]log info
+[WARN][2014-03-24 01:00:57,625][rml.test.TestLog]log warn
+[ERROR][2014-03-24 01:00:57,625][rml.test.TestLog]log error
+[INFO][2014-03-24 01:00:57,625][rml.test.TestSpring]info
+[ERROR][2014-03-24 01:04:13,093][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 01:04:13,109][rml.test.TestLog]log info
+[WARN][2014-03-24 01:04:13,109][rml.test.TestLog]log warn
+[ERROR][2014-03-24 01:04:13,109][rml.test.TestLog]log error
+[INFO][2014-03-24 01:04:13,109][rml.test.TestSpring]info
+[ERROR][2014-03-24 01:08:47,968][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 01:08:47,984][rml.test.TestLog]log info
+[WARN][2014-03-24 01:08:47,984][rml.test.TestLog]log warn
+[ERROR][2014-03-24 01:08:47,984][rml.test.TestLog]log error
+[INFO][2014-03-24 01:08:47,984][rml.test.TestSpring]info
+[ERROR][2014-03-24 13:32:06,767][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 13:32:06,767][rml.test.TestLog]log info
+[WARN][2014-03-24 13:32:06,767][rml.test.TestLog]log warn
+[ERROR][2014-03-24 13:32:06,767][rml.test.TestLog]log error
+[INFO][2014-03-24 13:32:06,782][rml.test.TestSpring]info
+[ERROR][2014-03-24 14:56:03,220][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 14:56:03,220][rml.test.TestLog]log info
+[WARN][2014-03-24 14:56:03,220][rml.test.TestLog]log warn
+[ERROR][2014-03-24 14:56:03,220][rml.test.TestLog]log error
+[INFO][2014-03-24 14:56:03,236][rml.test.TestSpring]info
+[ERROR][2014-03-24 16:34:45,220][rml.service.impl.TestServiceImpl]spring test
+[INFO][2014-03-24 16:34:45,236][rml.test.TestLog]log info
+[WARN][2014-03-24 16:34:45,236][rml.test.TestLog]log warn
+[ERROR][2014-03-24 16:34:45,236][rml.test.TestLog]log error
+[INFO][2014-03-24 16:34:45,236][rml.test.TestSpring]info

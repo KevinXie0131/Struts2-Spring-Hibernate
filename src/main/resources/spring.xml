@@ -6,10 +6,10 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context-3.0.xsd
 ">
 
-	<!-- config files -->
+	<!-- config files (Spring will read the properties file) -->
 	<context:property-placeholder location="classpath:config.properties" />
 
-	<!-- autoscan dao and service(auto DI) sy.dao,sy.service -->
+	<!-- autoscan dao and service(auto DI) rml.dao, rml.service -->
 	<context:component-scan base-package="rml.dao,rml.service" />
 
 </beans>
