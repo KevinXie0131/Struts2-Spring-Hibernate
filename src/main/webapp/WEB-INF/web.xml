@@ -39,7 +39,7 @@
 		<listener-class>rml.listener.RepairListener</listener-class>
 	</listener>
 	
-	<!-- 配置错误页面 -->
+	<!-- config error page -->
 	<error-page>
 		<error-code>404</error-code>
 		<location>/error/404.jsp</location>
