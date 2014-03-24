@@ -30,6 +30,7 @@
 				text:'register',
 				iconCls:'icon-edit',
 				handler:function(){
+					$('#user_reg_regForm input').val('');
 					$('#user_reg_regDialog').dialog('open');
 				}
 			},{

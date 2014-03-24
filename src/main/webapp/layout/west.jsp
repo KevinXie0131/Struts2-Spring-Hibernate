@@ -18,6 +18,7 @@
 					}
 					"></ul>
 		</div>
-		<div title="Title2" data-options="iconCls:'icon-reload'"></div>
+		<div title="Title2" data-options="iconCls:'icon-reload'">
+		</div>
 	</div>
 </div>

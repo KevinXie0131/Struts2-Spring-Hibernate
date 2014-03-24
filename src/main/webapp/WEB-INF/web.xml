@@ -38,6 +38,17 @@
 	<listener>
 		<listener-class>rml.listener.RepairListener</listener-class>
 	</listener>
+	
+	<!-- 配置错误页面 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error/404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error/500.jsp</location>
+	</error-page>
+	
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>
 	</welcome-file-list>

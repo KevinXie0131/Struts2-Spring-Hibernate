@@ -40,7 +40,7 @@
 				<td><input name="pwd" type="password" class="easyui-validatebox" data-options="required:true" /></td>
 			</tr>
 			<tr>
-				<th>Re-password</th>
+				<th>Repassword</th>
 				<td><input name="rePwd" type="password" class="easyui-validatebox" data-options="required:true,validType:'eqPwd[\'#user_reg_regForm input[name=pwd]\']'" /></td>
 			</tr>
 		</table>

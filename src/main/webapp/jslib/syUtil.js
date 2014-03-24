@@ -1,16 +1,15 @@
 /**
- * @author 孙宇
  * 
  * @requires jQuery,EasyUI
  * 
- * 扩展validatebox，添加验证两次密码功能
+ * extend validatebox，password should be the same as repassword
  */
 $.extend($.fn.validatebox.defaults.rules, {
 	eqPwd : {
 		validator : function(value, param) {
 			return value == $(param[0]).val();
 		},
-		message : '密码不一致！'
+		message : 'Password is not the same'
 	}
 });
 
@@ -42,11 +41,10 @@ $.fn.tree.defaults.loadFilter = function(data, parent) {
 };
 
 /**
- * @author 孙宇
  * 
  * @requires jQuery,EasyUI
  * 
- * 防止panel/window/dialog组件超出浏览器边界
+ * Avoid panel/window/dialog out of browser
  * @param left
  * @param top
  */
@@ -71,7 +69,7 @@ var easyuiPanelOnMove = function(left, top) {
 	if (buttom > browserHeight) {
 		t = browserHeight - height;
 	}
-	$(this).parent().css({/* 修正面板位置 */
+	$(this).parent().css({/* change position */
 		left : l,
 		top : t
 	});
@@ -81,11 +79,10 @@ $.fn.window.defaults.onMove = easyuiPanelOnMove;
 $.fn.panel.defaults.onMove = easyuiPanelOnMove;
 
 /**
- * @author 孙宇
  * 
  * @requires jQuery
  * 
- * 将form表单元素的值序列化成对象
+ * serialize the component of form
  * 
  * @returns object
  */
