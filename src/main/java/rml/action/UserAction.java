@@ -18,7 +18,7 @@ import rml.pageModel.Json;
 import rml.pageModel.User;
 import rml.service.TestService;
 import rml.service.UserServiceI;
-import rml.util.Encrypt;
+
 
 import com.opensymphony.xwork2.ModelDriven;
 
@@ -53,7 +53,8 @@ public class UserAction extends BaseAction implements ModelDriven<User> {
 			j.setSuccess(true);
 			j.setMsg("register done");
 		} catch (Exception e) {
-			j.setMsg(e.getMessage());
+			//j.setMsg(e.getMessage());
+			j.setMsg("register fail");
 		}
 
 		super.writeJson(j);
@@ -80,7 +81,7 @@ public class UserAction extends BaseAction implements ModelDriven<User> {
 		Json j = new Json();
 		if (u != null) {
 			j.setSuccess(true);
-			j.setMsg("login fail");
+			j.setMsg("login successful");
 		} else {
 			j.setMsg("login fail, username or password wrong");
 		}
