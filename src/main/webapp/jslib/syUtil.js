@@ -12,7 +12,9 @@ $.extend($.fn.validatebox.defaults.rules, {
 		message : 'Password is not the same'
 	}
 });
-
+/**
+ * easyui tree extension
+ */
 $.fn.tree.defaults.loadFilter = function(data, parent) {
 	var opt = $(this).data().tree.options;
 	var idFiled, textFiled, parentField;
@@ -39,7 +41,6 @@ $.fn.tree.defaults.loadFilter = function(data, parent) {
 	}
 	return data;
 };
-
 /**
  * 
  * @requires jQuery,EasyUI
@@ -77,7 +78,6 @@ var easyuiPanelOnMove = function(left, top) {
 $.fn.dialog.defaults.onMove = easyuiPanelOnMove;
 $.fn.window.defaults.onMove = easyuiPanelOnMove;
 $.fn.panel.defaults.onMove = easyuiPanelOnMove;
-
 /**
  * 
  * @requires jQuery
