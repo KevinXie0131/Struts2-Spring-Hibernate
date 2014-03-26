@@ -28,7 +28,7 @@ public class BaseDaoImpl<T> implements BaseDaoI<T> {
 
 	private Session getCurrentSession() {
 		return this.sessionFactory.getCurrentSession();
-	}
+	}  
 
 	@Override
 	public Serializable save(T o) {
@@ -105,6 +105,7 @@ public class BaseDaoImpl<T> implements BaseDaoI<T> {
 				q.setParameter(key, params.get(key));
 			}
 		}
+		//setFirstResult(the number of starting row, do not need to +1)
 		return q.setFirstResult((page - 1) * rows).setMaxResults(rows).list();
 	}
 

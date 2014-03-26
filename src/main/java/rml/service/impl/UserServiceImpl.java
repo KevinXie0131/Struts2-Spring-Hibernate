@@ -53,6 +53,7 @@ public class UserServiceImpl implements UserServiceI {
 		params.put("pwd", Encrypt.e(user.getPwd()));
 		params.put("name", user.getName());
 		Tuser t = userDao.get("from Tuser t where t.name = :name and t.pwd = :pwd", params);
+		//"from Tuser t where t.name = ? and t.pwd = ?" must follow the order of parameters
 		if (t != null) {
 			return user;
 		}

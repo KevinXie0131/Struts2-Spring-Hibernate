@@ -11,7 +11,7 @@ import com.opensymphony.xwork2.ModelDriven;
 
 @Action(value = "menuAction")
 public class MenuAction extends BaseAction implements ModelDriven<Menu> {
-
+   
 	private static final Logger logger = Logger.getLogger(MenuAction.class);
 
 	private Menu menu = new Menu();

@@ -25,8 +25,8 @@ import com.opensymphony.xwork2.ModelDriven;
 @Namespace("/")
 @Action(value = "userAction")
 public class UserAction extends BaseAction implements ModelDriven<User> {
-	
-	private User user = new User();
+	  
+	private User user = new User();//must new(), let ModelDriven input the value
 
 	@Override
 	public User getModel() {

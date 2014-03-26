@@ -7,6 +7,7 @@ import rml.service.RepairServiceI;
 
 @Action(value = "repairAction")
 public class RepairAction extends BaseAction {
+	
 	private RepairServiceI repairService;
 
 	public RepairServiceI getRepairService() {

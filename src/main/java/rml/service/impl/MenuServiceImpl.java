@@ -20,7 +20,7 @@ import rml.service.MenuServiceI;
 public class MenuServiceImpl implements MenuServiceI {
 
 	private static final Logger logger = Logger.getLogger(MenuServiceImpl.class);
-
+	
 	private BaseDaoI<Tmenu> menuDao;
 
 	public BaseDaoI<Tmenu> getMenuDao() {
