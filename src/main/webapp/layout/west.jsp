@@ -6,7 +6,11 @@
 					url : '${pageContext.request.contextPath}/menuAction!getAllTreeNode.action',
 					parentField : 'pid',
 					lines : true,
+					onLoadSuccess : function(node, data){			
+						$(this).tree('expandAll') 
+					},
 					onClick : function(node) {
+						console.info(node);
 						if (node.attributes.url) {
 							var url = '${pageContext.request.contextPath}' + node.attributes.url;
 							addTab({
@@ -22,3 +26,4 @@
 		</div>
 	</div>
 </div>
+<!--  $(this).tree('collapseAll')  -->

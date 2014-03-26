@@ -17,47 +17,47 @@
 			selectOnCheck : false,
 			frozenColumns : [ [ {
 				field : 'id',
-				title : '编号',
+				title : 'ID',
 				width : 150,
 				checkbox : true
 			}, {
 				field : 'name',
-				title : '登录名称',
+				title : 'Username',
 				width : 150,
 				sortable : true
 			} ] ],
 			columns : [ [ {
 				field : 'pwd',
-				title : '密码',
+				title : 'Password',
 				width : 150,
 				formatter : function(value, row, index) {
 					return '******';
 				}
 			}, {
 				field : 'createdatetime',
-				title : '创建时间',
+				title : 'Create Datetime',
 				width : 150,
 				sortable : true
 			}, {
 				field : 'modifydatetime',
-				title : '最后修改时间',
+				title : 'Modify Datetime',
 				width : 150,
 				sortable : true
 			} ] ],
 			toolbar : [ {
-				text : '增加',
+				text : 'Add',
 				iconCls : 'icon-add',
 				handler : function() {
 					append();
 				}
 			}, '-', {
-				text : '删除',
+				text : 'Delete',
 				iconCls : 'icon-remove',
 				handler : function() {
 					remove();
 				}
 			}, '-', {
-				text : '修改',
+				text : 'Modify',
 				iconCls : 'icon-edit',
 				handler : function() {
 				}
@@ -82,7 +82,7 @@
 		//var rows = $('#admin_yhgl_datagrid').datagrid('getSelections');
 		var ids = [];
 		if (rows.length > 0) {
-			$.messager.confirm('确认', '您是否要删除当前选中的项目？', function(r) {
+			$.messager.confirm('Confirm', 'Are you sure to delete?', function(r) {
 				if (r) {
 					for ( var i = 0; i < rows.length; i++) {
 						ids.push(rows[i].id);
@@ -97,7 +97,7 @@
 							$('#admin_yhgl_datagrid').datagrid('load');
 							$('#admin_yhgl_datagrid').datagrid('unselectAll');
 							$.messager.show({
-								title : '提示',
+								title : 'tips',
 								msg : r.msg
 							});
 						}
@@ -106,16 +106,16 @@
 			});
 		} else {
 			$.messager.show({
-				title : '提示',
-				msg : '请勾选要删除的记录！'
+				title : 'tips',
+				msg : 'Please select one to delete'
 			});
 		}
 	}
 </script>
 <div id="admin_yhgl_layout" class="easyui-layout" data-options="fit:true,border:false">
-	<div data-options="region:'north',title:'查询条件',border:false" style="height: 100px;">
+	<div data-options="region:'north',title:'Query',border:false" style="height: 100px;">
 		<form id="admin_yhgl_searchForm">
-			检索用户名称(可模糊查询)：<input name="name" /> <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" onclick="searchFun();">查询</a> <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel',plain:true" onclick="clearFun();">清空</a>
+			Fuzzy Query by Username: <input name="name" /> <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" onclick="searchFun();">Query</a> <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel',plain:true" onclick="clearFun();">Clear</a>
 		</form>
 	</div>
 	<div data-options="region:'center',border:false">
@@ -123,8 +123,8 @@
 	</div>
 </div>
 
-<div id="admin_yhgl_addDialog" class="easyui-dialog" data-options="closed:true,modal:true,title:'添加用户',buttons:[{
-				text : '增加',
+<div id="admin_yhgl_addDialog" class="easyui-dialog" data-options="closed:true,modal:true,title:'Add user',buttons:[{
+				text : 'Add',
 				iconCls : 'icon-add',
 				handler : function() {
 					$('#admin_yhgl_addForm').form('submit', {
@@ -141,7 +141,7 @@
 								$('#admin_yhgl_addDialog').dialog('close');
 							}
 							$.messager.show({
-								title : '提示',
+								title : 'tips',
 								msg : obj.msg
 							});
 						}
@@ -151,23 +151,23 @@
 	<form id="admin_yhgl_addForm" method="post">
 		<table>
 			<tr>
-				<th>编号</th>
+				<th>ID</th>
 				<td><input name="id" readonly="readonly" />
 				</td>
-				<th>登录名称</th>
+				<th>Username</th>
 				<td><input name="name" class="easyui-validatebox" data-options="required:true" />
 				</td>
 			</tr>
 			<tr>
-				<th>密码</th>
+				<th>Password</th>
 				<td><input name="pwd" type="password" class="easyui-validatebox" data-options="required:true" />
 				</td>
-				<th>创建时间</th>
+				<th>Create Datetime</th>
 				<td><input name="createdatetime" readonly="readonly" />
 				</td>
 			</tr>
 			<tr>
-				<th>最后修改时间</th>
+				<th>Modify Datetime</th>
 				<td><input name="modifydatetime" readonly="readonly" />
 				</td>
 				<th></th>
