@@ -35,7 +35,7 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
-	<!-- repaire database listener-->
+	<!-- repaire database listener (should after spring listener)-->
 	<listener>
 		<listener-class>rml.listener.RepairListener</listener-class>
 	</listener>
