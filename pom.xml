@@ -8,7 +8,7 @@
   <name>Maven Webapp Archetype</name>
   <url>http://maven.apache.org</url>
   
- 	<!--  Maven  -->
+ 	<!-- Maven official repository -->
 	<repositories>
 		<repository>
 			<id>maven</id>
