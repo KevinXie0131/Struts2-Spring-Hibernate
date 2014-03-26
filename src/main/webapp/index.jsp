@@ -21,7 +21,9 @@
 	<div data-options="region:'west'" style="width:200px;">
 		<jsp:include page="layout/west.jsp"></jsp:include>
 	</div>
-	<div data-options="region:'east',title:'east',split:true" style="width:200px;"></div>
+	<div data-options="region:'east',title:'east',split:true" style="width:220px;">
+		<div id="east_calendar" class="easyui-calendar" style="width:220px;height:220px;"></div> 
+	</div>
 	<div data-options="region:'center',title:'welcome SSH'" style="overflow: hidden;">
 		<jsp:include page="layout/center.jsp"></jsp:include>
 	</div>
