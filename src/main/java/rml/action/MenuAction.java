@@ -38,9 +38,10 @@ public class MenuAction extends BaseAction implements ModelDriven<Menu> {
 	public void getTreeNode() {
 		super.writeJson(menuService.getTreeNode(menu.getId()));
 	}
-
+	
+	//revise json, make icon display
 	public void getAllTreeNode() {
-		super.writeJson(menuService.getAllTreeNode());
+		super.writeJson_icon(menuService.getAllTreeNode());
 	}
 
 }
