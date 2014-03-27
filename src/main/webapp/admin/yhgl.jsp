@@ -4,7 +4,7 @@
 		$('#admin_yhgl_datagrid').datagrid({
 			url : '${pageContext.request.contextPath}/userAction!datagrid.action',
 			fit : true,
-			fitColumns : true,
+			fitColumns : true,//If the columns are not too many
 			border : false,
 			pagination : true,
 			idField : 'id',
@@ -97,7 +97,7 @@
 							$('#admin_yhgl_datagrid').datagrid('load');
 							$('#admin_yhgl_datagrid').datagrid('unselectAll');
 							$.messager.show({
-								title : 'tips',
+								title : 'Message',
 								msg : r.msg
 							});
 						}
@@ -106,7 +106,7 @@
 			});
 		} else {
 			$.messager.show({
-				title : 'tips',
+				title : 'Message',
 				msg : 'Please select one to delete'
 			});
 		}
@@ -115,7 +115,9 @@
 <div id="admin_yhgl_layout" class="easyui-layout" data-options="fit:true,border:false">
 	<div data-options="region:'north',title:'Query',border:false" style="height: 100px;">
 		<form id="admin_yhgl_searchForm">
-			Fuzzy Query by Username: <input name="name" /> <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" onclick="searchFun();">Query</a> <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel',plain:true" onclick="clearFun();">Clear</a>
+			Fuzzy Query by Username: <input name="name" />
+			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" onclick="searchFun();">Query</a> 
+			<a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-cancel',plain:true" onclick="clearFun();">Clear</a>
 		</form>
 	</div>
 	<div data-options="region:'center',border:false">
@@ -141,7 +143,7 @@
 								$('#admin_yhgl_addDialog').dialog('close');
 							}
 							$.messager.show({
-								title : 'tips',
+								title : 'Message',
 								msg : obj.msg
 							});
 						}
