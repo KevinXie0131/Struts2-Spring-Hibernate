@@ -10,7 +10,7 @@
 						$(this).tree('expandAll') 
 					},
 					onClick : function(node) {
-						console.info(node);
+					
 						if (node.attributes.url) {
 							var url = '${pageContext.request.contextPath}' + node.attributes.url;
 							addTab({
@@ -26,4 +26,5 @@
 		</div>
 	</div>
 </div>
+<!-- console.info(node); -->	
 <!--  $(this).tree('collapseAll')  -->

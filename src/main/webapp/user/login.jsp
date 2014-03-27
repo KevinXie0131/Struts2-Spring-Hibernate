@@ -10,7 +10,7 @@
 					$('#user_login_loginDialog').dialog('close');
 				}
 				$.messager.show({
-					title : 'tips',
+					title : 'Message',
 					msg : obj.msg
 				});
 			}
