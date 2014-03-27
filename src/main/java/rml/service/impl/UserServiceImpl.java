@@ -66,9 +66,9 @@ public class UserServiceImpl implements UserServiceI {
 		String hql = "from Tuser t ";
 		Map<String, Object> params = new HashMap<String, Object>();
 		hql = addWhere(user, hql, params);
-		String totalHql = "select count(*) " + hql;
+		String totalHql = "select count(*) " + hql;  //should provide 'total' to dataGrid
 		hql = addOrder(user, hql);
-		List<Tuser> l = userDao.find(hql, params, user.getPage(), user.getRows());
+		List<Tuser> l = userDao.find(hql, params, user.getPage(), user.getRows()); //find by pagination
 		List<User> nl = new ArrayList<User>();
 		changeModel(l, nl);
 		dg.setTotal(userDao.count(totalHql, params));

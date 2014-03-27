@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class User implements java.io.Serializable {
 
-	private int page;
+	private int page; //ModelDriven provide all parameters from frontend
 	private int rows;
 	private String sort;
 	private String order;
