@@ -28,6 +28,15 @@
 	<constant name="struts.dispatcher.parametersWorkaround" value="false" />
 
 	<package name="basePackage" extends="struts-default">
+		<interceptors>
+		<!-- Encoding Interceptor -->
+		<interceptor name="encodingInterceptor" class="rml.interceptor.EncodingInterceptor" />
+		<interceptor-stack name="encodingStack">
+			<interceptor-ref name="defaultStack"></interceptor-ref>
+			<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+		</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="encodingStack"></default-interceptor-ref>
 	</package>
 
 </struts>
