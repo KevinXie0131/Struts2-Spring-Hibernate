@@ -96,7 +96,8 @@ public class UserServiceImpl implements UserServiceI {
 	private String addWhere(User user, String hql, Map<String, Object> params) {
 		if (user.getName() != null && !user.getName().trim().equals("")) {
 			hql += " where t.name like :name";
-			params.put("name", "%%" + user.getName().trim() + "%%");
+			params.put("name", "%%" + user.getName().trim() + "%%"); //%% beter than %
+			//select * from tab t where t.name like '%admin%';
 		}
 		return hql;
 	}
@@ -119,6 +120,7 @@ public class UserServiceImpl implements UserServiceI {
 		}
 		hql += ")";
 		userDao.executeHql(hql);
+		
 	}
 
 }

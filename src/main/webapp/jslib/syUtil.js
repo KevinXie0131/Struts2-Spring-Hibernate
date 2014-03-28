@@ -82,7 +82,7 @@ $.fn.panel.defaults.onMove = easyuiPanelOnMove;
  * 
  * @requires jQuery
  * 
- * serialize the component of form
+ * serialize the parameters of form to object
  * 
  * @returns object
  */

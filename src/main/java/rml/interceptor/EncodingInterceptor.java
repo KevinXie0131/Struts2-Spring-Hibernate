@@ -9,7 +9,7 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 /**
  * 
- * character encode interceptor
+ * character encode interceptor (Struts2/utf-8)
  * 
  */
 public class EncodingInterceptor extends AbstractInterceptor {

@@ -60,13 +60,16 @@
 				text : 'Modify',
 				iconCls : 'icon-edit',
 				handler : function() {
+					edit();
 				}
 			}, '-' ]
 		});
 	});
 
 	function searchFun() {
-		$('#admin_yhgl_datagrid').datagrid('load', serializeObject($('#admin_yhgl_searchForm')));
+		$('#admin_yhgl_datagrid').datagrid('load', serializeObject($('#admin_yhgl_searchForm'))); //'load' input parameters
+		//console.info(serializeObject($('#admin_yhgl_searchForm')));
+		//$('#admin_yhgl_datagrid').datagrid('load', {name:$('#admin_yhgl_layout input[name=name]').val()});
 	}
 	function clearFun() {
 		$('#admin_yhgl_layout input[name=name]').val('');
@@ -111,6 +114,33 @@
 			});
 		}
 	}
+	function edit() {
+		var rows = $('#admin_yhgl_datagrid').datagrid('getChecked');
+		var ids = [];
+		if (rows.length == 1) {			
+			ids.push(rows[0].id);
+			$.ajax({
+				url : '${pageContext.request.contextPath}/userAction!edit.action',
+				data : {
+					ids : ids.join(',')
+				},
+				dataType : 'json',
+				success : function(r) {
+					$('#admin_yhgl_datagrid').datagrid('load');
+					$('#admin_yhgl_datagrid').datagrid('unselectAll');
+					$.messager.show({
+						title : 'Message',
+						msg : r.msg
+					});
+				}
+			});
+		} else {
+			$.messager.show({
+				title : 'Message',
+				msg : 'Please select one to edit'
+			});
+		}
+	}
 </script>
 <div id="admin_yhgl_layout" class="easyui-layout" data-options="fit:true,border:false">
 	<div data-options="region:'north',title:'Query',border:false" style="height: 100px;">
@@ -125,7 +155,11 @@
 	</div>
 </div>
 
-<div id="admin_yhgl_addDialog" class="easyui-dialog" data-options="closed:true,modal:true,title:'Add user',buttons:[{
+<div id="admin_yhgl_addDialog" class="easyui-dialog" data-options="
+			closed:true,
+			modal:true,
+			title:'Add user',
+			buttons:[{
 				text : 'Add',
 				iconCls : 'icon-add',
 				handler : function() {
@@ -149,7 +183,9 @@
 						}
 					});
 				}
-			}]" style="width: 500px;height:200px;" align="center">
+			}]" 
+			style="width: 500px; height:200px;" 
+			align="left">
 	<form id="admin_yhgl_addForm" method="post">
 		<table>
 			<tr>

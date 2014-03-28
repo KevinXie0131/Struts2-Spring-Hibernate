@@ -66,7 +66,7 @@ public class UserAction extends BaseAction implements ModelDriven<User> {
 		try {
 			User u = userService.save(user);
 			j.setSuccess(true);
-			j.setMsg("add done");
+			j.setMsg("add user done");
 			j.setObj(u);
 		} catch (Exception e) {
 			j.setMsg(e.getMessage());

@@ -75,8 +75,8 @@ public class Tuser implements java.io.Serializable {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-
-	@Temporal(TemporalType.TIMESTAMP)
+	
+	@Temporal(TemporalType.TIMESTAMP) // TemporalType.DATE => TemporalType.TIMESTAMP
 	@Column(name = "CREATEDATETIME", length = 7)
 	public Date getCreatedatetime() {
 		return this.createdatetime;
