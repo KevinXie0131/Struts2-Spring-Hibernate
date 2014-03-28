@@ -110,34 +110,60 @@
 		} else {
 			$.messager.show({
 				title : 'Message',
-				msg : 'Please select one to delete'
+				msg : 'Please check one to delete'
 			});
 		}
 	}
 	function edit() {
 		var rows = $('#admin_yhgl_datagrid').datagrid('getChecked');
-		var ids = [];
-		if (rows.length == 1) {			
-			ids.push(rows[0].id);
-			$.ajax({
-				url : '${pageContext.request.contextPath}/userAction!edit.action',
-				data : {
-					ids : ids.join(',')
+		if(rows.length == 1){
+			var d=$('<div/>').dialog({
+				width:	500,
+				height:	200,
+				href:	'${pageContext.request.contextPath}/admin/userEdit.jsp',
+				model:	true,
+				title:	'Edit User',
+				buttons:[{
+					text : 'Edit',
+					iconCls : 'icon-edit',
+					handler : function() {
+						$('#admin_yhgl_userEditForm').form('submit', {
+							url : '${pageContext.request.contextPath}/userAction!edit.action',
+							success : function(r) {
+								var obj = jQuery.parseJSON(r);
+								if (obj.success) {
+									/*	$('#admin_yhgl_datagrid').datagrid('reload');*/
+									$('#admin_yhgl_datagrid').datagrid('updateRow',{
+										index:	$('#admin_yhgl_datagrid').datagrid('getRowIndex',rows[0]),
+										row:	obj.obj
+									});
+									$('#admin_yhgl_datagrid').datagrid('uncheckAll');
+									d.dialog('close');
+								}
+								$.messager.show({
+									title : 'Message',
+									msg : obj.msg
+								});
+							}
+						});
+					}
+				}],
+				onClose: function(){
+					$(this).dialog('destroy');
 				},
-				dataType : 'json',
-				success : function(r) {
-					$('#admin_yhgl_datagrid').datagrid('load');
-					$('#admin_yhgl_datagrid').datagrid('unselectAll');
-					$.messager.show({
-						title : 'Message',
-						msg : r.msg
-					});
+				onLoad: function(){
+			//		$('#admin_yhgl_userEditForm input[name=id]').val(rows[0].id);
+			//		$('#admin_yhgl_userEditForm input[name=name]').val(rows[0].name);
+			//		$('#admin_yhgl_userEditForm input[name=pwd]').val(rows[0].pwd);
+			//		$('#admin_yhgl_userEditForm input[name=createdatetime]').val(rows[0].createdatetime);
+			//		$('#admin_yhgl_userEditForm input[name=modifydatetime]').val(rows[0].modifydatetime);
+					$('#admin_yhgl_userEditForm').form('load',rows[0]);
 				}
 			});
-		} else {
+		}else{
 			$.messager.show({
 				title : 'Message',
-				msg : 'Please select one to edit'
+				msg : 'Please check one to edit'
 			});
 		}
 	}

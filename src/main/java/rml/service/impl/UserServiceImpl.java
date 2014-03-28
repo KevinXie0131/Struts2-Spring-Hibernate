@@ -123,4 +123,12 @@ public class UserServiceImpl implements UserServiceI {
 		
 	}
 
+	@Override
+	public User edit(User user) {
+		
+		Tuser t = userDao.get(Tuser.class, user.getId());
+		BeanUtils.copyProperties(user, t, new String[] {"id", "pwd"});
+		return user;
+	}
+
 }

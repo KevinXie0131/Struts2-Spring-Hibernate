@@ -72,9 +72,7 @@ public class UserAction extends BaseAction implements ModelDriven<User> {
 			//j.setMsg(e.getMessage());
 			j.setMsg("add user fail");
 		}
-
 		super.writeJson(j);
-
 	}
 
 	public void login() {
@@ -99,6 +97,19 @@ public class UserAction extends BaseAction implements ModelDriven<User> {
 		Json j = new Json();
 		j.setSuccess(true);
 		j.setMsg("delete done");
+		super.writeJson(j);
+	}
+	
+	public void edit() {
+		Json j = new Json();
+		try {
+			User u = userService.edit(user);
+			j.setSuccess(true);
+			j.setMsg("edit user done");
+			j.setObj(u);
+		} catch (Exception e) {
+			j.setMsg("edit user fail");
+		}
 		super.writeJson(j);
 	}
 	

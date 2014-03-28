@@ -13,4 +13,6 @@ public interface UserServiceI {
 
 	public void remove(String ids);
 	
+	public User edit(User user);
+	
 }
