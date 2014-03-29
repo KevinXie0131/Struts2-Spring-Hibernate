@@ -22,7 +22,7 @@
 		<jsp:include page="layout/west.jsp"></jsp:include>
 	</div>
 	<div data-options="region:'east',title:'east',split:true" style="width:220px;">
-		<div id="east_calendar" class="easyui-calendar" style="width:220px;height:220px;"></div> 
+		<jsp:include page="layout/east.jsp"></jsp:include>
 	</div>
 	<div data-options="region:'center',title:'welcome SSH'" style="overflow: hidden;">
 		<jsp:include page="layout/center.jsp"></jsp:include>
