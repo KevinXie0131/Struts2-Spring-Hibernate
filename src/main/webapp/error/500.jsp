@@ -19,10 +19,32 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!--
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
-
+	<STYLE type=text/css>.font14 {
+		FONT-SIZE: 14px
+	}
+	.font12 {
+		FONT-SIZE: 12px
+	}
+	.font12 a{
+		FONT-SIZE: 12px; color: #CC0000; text-decoration:none;
+	}
+	</STYLE>
   </head>
   
   <body>
-    500
+    <TABLE height=500 cellSpacing=0 cellPadding=0 width=500 align=center background=x.gif border=0>
+	  	<TBODY>
+	  		<TR>
+	    		<TD height=330></TD>
+	    	</TR>
+	  		<TR>
+	    		<TD vAlign=top>
+	      		<DIV class=font14 align=center>
+	      			<STRONG>The page you visit<FONT color=#0099ff>does not exist</FONT></STRONG>
+	      		</DIV>
+	      		</TD>
+	      	</TR>
+	     </TBODY>
+     </TABLE>
   </body>
 </html>
