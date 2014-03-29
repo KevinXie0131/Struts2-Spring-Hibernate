@@ -36,9 +36,8 @@
 	}
 </script>
 <div id="layout_center_tabs" class="easyui-tabs" data-options="fit:true,border:false" style="overflow: hidden;">
-	<div title="Home">
-		<p><font size="4" face="arial" color="blue">Struts2+Spring+Hibernate</font></p>
-		<a href="http://localhost:8080/zhibing_ssh/tutorial_layout.html"><font size="4" color="blue">Demo link</font></a>
+	<div title="Home" data-options="border:false" style="overflow: hidden;">
+		<iframe src="${pageContext.request.contextPath}/portal/index.jsp" frameborder="0" style="border: 0; width: 100%; height: 98%;"></iframe>
 	</div>
 </div>
 
