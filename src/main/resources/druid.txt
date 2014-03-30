@@ -1,0 +1,39 @@
+	<bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
+		<property name="url" value="${jdbc_url}" />
+		<property name="username" value="${jdbc_username}" />
+		<property name="password" value="${jdbc_password}" />
+
+		<!-- initial size -->
+		<property name="initialSize" value="0" />
+		<!-- max connection-->
+		<property name="maxActive" value="20" />
+		<!-- max idle-->
+		<property name="maxIdle" value="20" />
+		<!-- min idle -->
+		<property name="minIdle" value="0" />
+		<!-- max waiting time -->
+		<property name="maxWait" value="60000" />
+
+		<!-- <property name="poolPreparedStatements" value="true" /> <property name="maxPoolPreparedStatementPerConnectionSize" value="33" /> -->
+
+		<property name="validationQuery" value="${validationQuery}" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<property name="testWhileIdle" value="true" />
+
+		<!-- time between eviction check (ms) -->
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<!-- min length of a connection(ms) -->
+		<property name="minEvictableIdleTimeMillis" value="25200000" />
+
+		<!-- remove abandoned feature -->
+		<property name="removeAbandoned" value="true" />
+		<!-- 1800s=30min -->
+		<property name="removeAbandonedTimeout" value="1800" />
+		<!-- log for abanded -->
+		<property name="logAbandoned" value="true" />
+
+		<!-- supervise database -->
+		<!-- <property name="filters" value="stat" /> -->
+		<property name="filters" value="mergeStat" />
+	</bean>
