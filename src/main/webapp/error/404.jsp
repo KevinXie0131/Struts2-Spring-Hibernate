@@ -14,13 +14,13 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/error/files/qbase.css" type="text/css"></link>
 </head>
 <body>
-	<SECTION class=mod-page-body>
-		<DIV class="mod-page-main wordwrap clearfix">
-			<DIV class=x-page-container>
-				<DIV class="mod-notfound grid-98"><IMG class=img-notfound height=320 src="${pageContext.request.contextPath}/error/files/notfound.gif" width=520>
+	<SECTION class="mod-page-body">
+		<DIV class="mod-page-main wordwrap clearfix" >
+			<DIV class="x-page-container">
+				<DIV class="mod-notfound grid-98"><IMG class="img-notfound" height=320 src="${pageContext.request.contextPath}/error/files/notfound.gif" width=520>
 				<P style="FONT-SIZE: 24px; LINE-HEIGHT: 70px">Opps! Page Not Found.</P>
 				<P style="FONT-SIZE: 16px; MARGIN-BOTTOM: 30px">We suggest</P>
-				<P style="FONT-SIZE: 16px; LINE-HEIGHT: 20px">Gp back to <A href="${pageContext.request.contextPath}">Home</A> </P>
+				<P style="FONT-SIZE: 16px; LINE-HEIGHT: 20px">Gp back to <A href="${pageContext.request.contextPath}">Home</A></P>
 				</DIV>
 			</DIV>
 		</DIV>
