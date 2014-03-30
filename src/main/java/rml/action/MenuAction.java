@@ -34,6 +34,7 @@ public class MenuAction extends BaseAction implements ModelDriven<Menu> {
 
 	/**
 	 * get tree node asynchronous 
+	 * @throws Exception 
 	 */
 	public void getTreeNode() {
 		super.writeJson(menuService.getTreeNode(menu.getId()));
