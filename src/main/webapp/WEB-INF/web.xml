@@ -6,7 +6,7 @@
   <!-- spring config (read two xml files) -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring.xml,classpath:spring-hibernate.xml</param-value>
+		<param-value>classpath:spring-core.xml,classpath:spring-hibernate.xml</param-value>
 	</context-param>
 	<!-- openSessionInView config -->
 	<filter>
