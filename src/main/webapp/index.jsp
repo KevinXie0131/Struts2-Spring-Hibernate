@@ -16,7 +16,7 @@
 <script type="text/javascript" src="jslib/syUtil.js"></script>
 </head>
 <body class="easyui-layout">
-	<div data-options="region:'north'" style="height:60px;"></div>
+	<div data-options="region:'north'" style="height:40px;"></div>
 	<div data-options="region:'south'" style="height:20px;"></div>
 	<div data-options="region:'west'" style="width:200px;">
 		<jsp:include page="layout/west.jsp"></jsp:include>
