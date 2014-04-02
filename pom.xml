@@ -36,9 +36,23 @@
 	<!-- Encoding -->
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<jdk.version>1.6</jdk.version>
+		
 		<spring.version>3.1.2.RELEASE</spring.version>
 		<hibernate.version>4.1.7.Final</hibernate.version>
 		<struts.version>2.3.4.1</struts.version>
+		
+		<jstl.version>1.2</jstl.version>
+		<jsp.version>2.2.1-b03</jsp.version>
+		<jackson.version>1.9.13</jackson.version>
+		<fastjson.version>1.1.24</fastjson.version>
+		<c3p0.version>0.9.0.2</c3p0.version>
+		<druid.version>0.2.8</druid.version>
+		<aspectj.version>1.7.0</aspectj.version>
+		<servlet.version>2.5</servlet.version>
+		<log4j.version>1.2.17</log4j.version>
+		<junit.version>4.11-beta-1</junit.version>
+		
 	</properties>
 	
 	<dependencies>
@@ -46,31 +60,31 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<version>${jstl.version}</version>
 		</dependency>
 		<!-- jsp (scope:provided, servlet implemented by tomcat) -->
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
-			<version>2.2.1-b03</version>
+			<version>${jsp.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- Jackson -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.13</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-core-asl</artifactId>
-			<version>1.9.13</version>
+			<version>${jackson.version}</version>
 		</dependency>
 		<!-- fastJson -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.1.24</version>
+			<version>${fastjson.version}</version>
 		</dependency>
 		<!-- oracle (can not download from Maven repository)  -->
 		<dependency>
@@ -82,48 +96,48 @@
 		<dependency>
 			<groupId>c3p0</groupId>
 			<artifactId>c3p0</artifactId>
-			<version>0.9.0.2</version>  
+			<version>${c3p0.version}</version>  
 		</dependency>
 		<dependency>
    			<groupId>org.hibernate</groupId>
     		<artifactId>hibernate-c3p0</artifactId>
-    		<version>4.1.7.Final</version>
+    		<version>${hibernate.version}</version>
 		</dependency>
 		<dependency>
 		 	<groupId>c3p0</groupId>
 		 	<artifactId>c3p0-oracle-thin-extras</artifactId>
-			<version>0.9.0.2</version>
+			<version>${c3p0.version}</version>
 		</dependency>  
 		<!-- druid -->    
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
-			<version>0.2.8</version>
+			<version>${druid.version}</version>
 		</dependency>
 		<!-- aspectjweaver -->
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.7.0</version>
+			<version>${aspectj.version}</version>  
 		</dependency>
 		<!-- servlet (scope:provided, servlet implemented by tomcat) -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<version>${servlet.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- log4j -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.17</version>
+			<version>${log4j.version}</version>
 		</dependency>
 		<!-- junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11-beta-1</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- hibernate4 -->
