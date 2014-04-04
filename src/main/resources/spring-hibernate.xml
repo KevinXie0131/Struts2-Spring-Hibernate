@@ -25,7 +25,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 		<property name="idleConnectionTestPeriod" value="60" />
 		<property name="acquireRetryAttempts" value="30" />
 		<property name="breakAfterAcquireFailure" value="true" />
-    </bean>
+    </bean>	
  	
 	<!-- config hibernate session factory -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">

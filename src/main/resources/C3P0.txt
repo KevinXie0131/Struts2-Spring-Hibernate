@@ -10,6 +10,7 @@
 		<property name="maxIdleTime" value="60"/>
 		<property name="acquireIncrement" value="5" />
 		<property name="maxStatements" value="0" />
+		<property name="checkoutTimeout" value="1000" />
 		<property name="idleConnectionTestPeriod" value="60" />
 		<property name="acquireRetryAttempts" value="30" />
 		<property name="breakAfterAcquireFailure" value="true" />
