@@ -3,7 +3,7 @@
 	<div class="easyui-accordion" data-options="fit:true,border:false">
 		<div title="System" data-options="iconCls:'icon-save'">
 			<ul id="layout_west_tree" class="easyui-tree" data-options="
-					url : '${pageContext.request.contextPath}/menuAction!getAllTreeNode.action',
+					url : '${pageContext.request.contextPath}/demo/menuAction!doNotNeedSession_tree.action',
 					parentField : 'pid',
 					lines : true,
 					onLoadSuccess : function(node, data){			
@@ -21,8 +21,6 @@
 						}
 					}
 					"></ul>
-		</div>
-		<div title="Title2" data-options="iconCls:'icon-reload'">
 		</div>
 	</div>
 </div>

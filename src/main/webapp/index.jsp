@@ -16,12 +16,14 @@
 <script type="text/javascript" src="jslib/syUtil.js"></script>
 </head>
 <body class="easyui-layout">
-	<div data-options="region:'north'" style="height:40px;"></div>
+	<div data-options="region:'north'" style="height:40px;">
+		
+	</div>
 	<div data-options="region:'south'" style="height:20px;"></div>
 	<div data-options="region:'west'" style="width:200px;">
 		<jsp:include page="layout/west.jsp"></jsp:include>
 	</div>
-	<div data-options="region:'east',title:'east',split:true" style="width:220px;">
+	<div data-options="region:'east',title:'Other',split:true" style="width:220px;">
 		<jsp:include page="layout/east.jsp"></jsp:include>
 	</div>
 	<div data-options="region:'center',title:'welcome SSH'" style="overflow: hidden;">
