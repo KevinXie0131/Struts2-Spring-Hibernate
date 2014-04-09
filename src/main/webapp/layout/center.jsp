@@ -1,43 +1,100 @@
-<%@ page language="java" pageEncoding="UTF-8"%>
-<script type="text/javascript">
-	$(function(){
-		$('#layout_center_tabs').tabs({
-			onContextMenu: function(e, title,index){
-				e.preventDefault();
-				$('#layout_center_tabs_menu').menu('show', {
-					left: e.pageX,
-					top: e.pageY
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<script type="text/javascript" charset="utf-8">
+	var centerTabs;
+	var tabsMenu;
+	$(function() {
+		tabsMenu = $('#tabsMenu').menu({
+			onClick : function(item) {
+				var curTabTitle = $(this).data('tabTitle');
+				var type = $(item.target).attr('type');
+
+				if (type === 'refresh') {
+					refreshTab(curTabTitle);
+					return;
+				}
+
+				if (type === 'close') {
+					var t = centerTabs.tabs('getTab', curTabTitle);
+					if (t.panel('options').closable) {
+						centerTabs.tabs('close', curTabTitle);
+					}
+					return;
+				}
+
+				var allTabs = centerTabs.tabs('tabs');
+				var closeTabsTitle = [];
+
+				$.each(allTabs, function() {
+					var opt = $(this).panel('options');
+					if (opt.closable && opt.title != curTabTitle && type === 'closeOther') {
+						closeTabsTitle.push(opt.title);
+					} else if (opt.closable && type === 'closeAll') {
+						closeTabsTitle.push(opt.title);
+					}
 				});
+
+				for ( var i = 0; i < closeTabsTitle.length; i++) {
+					centerTabs.tabs('close', closeTabsTitle[i]);
+				}
+			}
+		});
+
+		centerTabs = $('#centerTabs').tabs({
+			fit : true,
+			border : false,
+			onContextMenu : function(e, title) {
+				e.preventDefault();
+				tabsMenu.menu('show', {
+					left : e.pageX,
+					top : e.pageY
+				}).data('tabTitle', title);
 			}
 		});
 	});
-	function addTab(opts) {
-		var t = $('#layout_center_tabs');
-		if (t.tabs('exists', opts.title)) {
-			t.tabs('select', opts.title);
+	function addTab(node) {
+		if (centerTabs.tabs('exists', node.text)) {
+			centerTabs.tabs('select', node.text);
 		} else {
-			t.tabs('add', opts);
+			if (node.attributes.url && node.attributes.url.length > 0) {
+			
+				centerTabs.tabs('add', {
+					title : node.text,
+					closable : true,
+					iconCls : node.iconCls,
+					content : '<iframe src="${pageContext.request.contextPath}' + node.attributes.url + '" frameborder="0" style="border:0;width:100%;height:99.4%;"></iframe>',
+					tools : [ {
+						iconCls : 'icon-mini-refresh',
+						handler : function() {
+							refreshTab(node.text);
+						}
+					} ]
+				});
+			} else {
+				centerTabs.tabs('add', {
+					title : node.text,
+					closable : true,
+					iconCls : node.iconCls,
+					content : '<iframe src="error/err.jsp" frameborder="0" style="border:0;width:100%;height:99.4%;"></iframe>',
+					tools : [ {
+						iconCls : 'icon-mini-refresh',
+						handler : function() {
+							refreshTab(node.text);
+						}
+					} ]
+				});
+			}
 		}
 	}
-	layout_center_tabs_refresh = function(){
-		alert("Refresh");
-	}
-	layout_center_tabs_close = function(){
-		var tab = $('#layout_center_tabs').tabs('getSelected');
-		var index = $('#layout_center_tabs').tabs('getTabIndex',tab);
-		if(index != 0){
-			$('#layout_center_tabs').tabs('close',index);
-		}else{
-			$.messager.show({
-				title : 'Message',
-				msg : 'Do not close Home page'
-			});
-		}
+	function refreshTab(title) {
+		var tab = centerTabs.tabs('getTab', title);
+		centerTabs.tabs('update', {
+			tab : tab,
+			options : tab.panel('options')
+		});
 	}
 </script>
-<div id="layout_center_tabs" class="easyui-tabs" data-options="fit:true,border:false" style="overflow: hidden;">
+<div id="centerTabs">
 	<div title="Home" data-options="border:false" style="overflow: hidden;">
-		<!--  <iframe src="${pageContext.request.contextPath}/portal/index.jsp" frameborder="0" style="border: 0; width: 100%; height: 98%;"></iframe>-->
 		<hr />
 		<div style="size:14px;color:blue">Framework</div>
 		<ul>
@@ -55,23 +112,13 @@
 			<li>Github link</li>
 			<li>Linkedin link</li>
 		</ul>
-		<hr />
-		
-		<div id="p" class="easyui-panel" title="My Panel"     
-	        style="width:500px;height:150px;padding:10px;background:#fafafa;"   
-	        data-options="iconCls:'icon-save',collapsible:true">   
-		    <ul>
-				<li>Java Struts2 Spring Hiberante EasyUI Maven</li>
-				<li>Oracle10g</li>
-				<li>Tomcat</li>
-				<li>JDK1.6+</li>
-			</ul>
-		</div>  
-		
+		<hr />	
 	</div>
 </div>
-
-<div id="layout_center_tabs_menu" class="easyui-menu" style="display:none;width:120px;">
-	<div iconCls="icon-reload" onclick="layout_center_tabs_refresh();">Refresh</div>
-	<div iconCls="icon-cancel" onclick="layout_center_tabs_close();">Close</div>
+<div id="tabsMenu" style="width: 120px;display:none;">
+	<div type="refresh">Refresh</div>
+	<div class="menu-sep"></div>
+	<div type="close">Close</div>
+	<div type="closeOther">Close other</div>
+	<div type="closeAll">Close all</div>
 </div>
