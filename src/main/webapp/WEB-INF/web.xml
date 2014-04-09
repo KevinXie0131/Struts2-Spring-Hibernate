@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-	<display-name></display-name>
+	<description>Struts2.3.16+Spring3.2.8+Hibernate4.2.11</description>
+	<display-name>Zhibing_SSH</display-name>
   
   <!-- spring config (read two xml files) -->
 	<context-param>
@@ -22,6 +23,23 @@
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
 	</filter>
+	<!-- 字符集编码配置 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter>
+		<filter-name>errorImgFilter</filter-name>
+		<filter-class>rml.filter.ErrorImgFilter</filter-class>
+	</filter>
 	<!-- openSessionInViewFilter should be before struts2-->
 	<filter-mapping>
 		<filter-name>openSessionInViewFilter</filter-name>
@@ -31,6 +49,14 @@
 		<filter-name>struts2</filter-name>
 		<url-pattern>*.action</url-pattern>
 	</filter-mapping>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>errorImgFilter</filter-name>
+		<url-pattern>/attached/*</url-pattern>
+	</filter-mapping>
 	<!-- spring listener -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -39,6 +65,13 @@
 	<listener>
 		<listener-class>rml.listener.RepairListener</listener-class>
 	</listener>
+	<listener>
+		<listener-class>rml.listener.OnlineListener</listener-class>
+	</listener>
+	
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
 	
 	<!-- config error page -->
 	<error-page>
@@ -53,14 +86,5 @@
 	<welcome-file-list>
 		<welcome-file>/index.jsp</welcome-file>
 	</welcome-file-list>
-  
-  <servlet>
-    <servlet-name>PageGrid</servlet-name>
-    <servlet-class>com.servlet.PageGrid</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>PageGrid</servlet-name>
-    <url-pattern>/PageGrid</url-pattern>
-  </servlet-mapping>
   
 </web-app>
