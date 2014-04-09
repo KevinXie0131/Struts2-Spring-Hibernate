@@ -19,5 +19,5 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/jslib/jquery-easyui-portal/portal.css" type="text/css"></link>
 <script type="text/javascript" src="${pageContext.request.contextPath}/jslib/jquery-easyui-portal/jquery.portal.js" charset="utf-8"></script>
 <!-- 自定义库 -->
-<link rel="stylesheet" href="${pageContext.request.contextPath}/style/syCss.css" type="text/css"></link>
-<script type="text/javascript" src="${pageContext.request.contextPath}/jslib/syUtil.js" charset="utf-8"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/style/myCss.css" type="text/css"></link>
+<script type="text/javascript" src="${pageContext.request.contextPath}/jslib/myUtil.js" charset="utf-8"></script>

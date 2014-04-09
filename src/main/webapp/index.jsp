@@ -13,7 +13,7 @@
 <script type="text/javascript" src="jslib/jquery-easyui/jquery.easyui.min.js"></script>
 <link rel="stylesheet" href="jslib/jquery-easyui/themes/default/easyui.css" type="text/css"></link>
 <link rel="stylesheet" href="jslib/jquery-easyui/themes/icon.css" type="text/css"></link>
-<script type="text/javascript" src="jslib/syUtil.js"></script>
+<script type="text/javascript" src="jslib/myUtil.js"></script>
 </head>
 <body class="easyui-layout">
 	<div data-options="region:'north'" style="height:40px;">
