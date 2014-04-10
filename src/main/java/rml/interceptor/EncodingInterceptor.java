@@ -8,7 +8,6 @@ import com.opensymphony.xwork2.ActionInvocation;
 import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 
 /**
- * 
  * character encode interceptor (Struts2/utf-8)
  * 
  */
