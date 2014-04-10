@@ -14,24 +14,41 @@ public interface BaseDaoI<T> {
 
 	public void saveOrUpdate(T o);
 
-	public T get(Class<T> c, Serializable id);
-
-	public T get(String hql);
-
-	public T get(String hql, Map<String, Object> params);
-
 	public List<T> find(String hql);
 
-	public List<T> find(String hql, Map<String, Object> params);
+	public List<T> find(String hql, Object[] param);
 
-	public List<T> find(String hql, int page, int rows);
+	public List<T> find(String hql, List<Object> param);
 
-	public List<T> find(String hql, Map<String, Object> params, int page, int rows);
+	/**
+	 * @param page
+	 *            which pag to display
+	 * @param rows
+	 *            how many records in each page
+	 */
+	public List<T> find(String hql, Object[] param, Integer page, Integer rows);
+
+	public List<T> find(String hql, List<Object> param, Integer page, Integer rows);
+
+	public T get(Class<T> c, Serializable id);
+
+	public T get(String hql, Object[] param);
+
+	public T get(String hql, List<Object> param);
 
 	public Long count(String hql);
 
-	public Long count(String hql, Map<String, Object> params);
+	public Long count(String hql, Object[] param);
 
-	public int executeHql(String hql);
+	public Long count(String hql, List<Object> param);
+
+	/**
+	 * @return number of results
+	 */
+	public Integer executeHql(String hql);
+
+	public Integer executeHql(String hql, Object[] param);
+
+	public Integer executeHql(String hql, List<Object> param);
 
 }
