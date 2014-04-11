@@ -3,7 +3,7 @@
 <!DOCTYPE HTML >
 <html>
 <head>
-<title>SSH DEMO</title>
+<title>Struts2+Spring+Hibernate</title>
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -17,7 +17,7 @@
 </head>
 <body class="easyui-layout">
 	<div data-options="region:'north'" style="height:40px;">
-		
+		<jsp:include page="layout/north.jsp"></jsp:include>
 	</div>
 	<div data-options="region:'south'" style="height:20px;"></div>
 	<div data-options="region:'west'" style="width:200px;">
@@ -26,7 +26,7 @@
 	<div data-options="region:'east',title:'Other',split:true" style="width:220px;">
 		<jsp:include page="layout/east.jsp"></jsp:include>
 	</div>
-	<div data-options="region:'center',title:'welcome SSH'" style="overflow: hidden;">
+	<div data-options="region:'center',title:'Struts2.3.16+Spring3.2.8+Hibernate4.2.11+JQuery-EasyUI1.3.1+Oracle10g'" style="overflow: hidden;">
 		<jsp:include page="layout/center.jsp"></jsp:include>
 	</div>
 
