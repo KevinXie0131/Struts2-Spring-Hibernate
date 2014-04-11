@@ -1,4 +1,4 @@
-<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="${driverClassName}"/>
         <property name="jdbcUrl" value="${jdbc_url}" />
 		<property name="user" value="${jdbc_username}" />

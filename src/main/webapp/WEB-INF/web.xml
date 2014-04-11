@@ -23,7 +23,7 @@
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
 	</filter>
-	<!-- 字符集编码配置 -->
+	<!-- character encoding config -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
@@ -55,7 +55,7 @@
 	</filter-mapping>
 	<filter-mapping>
 		<filter-name>errorImgFilter</filter-name>
-		<url-pattern>/attached/*</url-pattern>
+		<url-pattern>/upload/*</url-pattern>
 	</filter-mapping>
 	<!-- spring listener -->
 	<listener>

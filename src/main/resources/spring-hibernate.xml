@@ -42,18 +42,32 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 		<!-- autoscan annotation for hiberante config -->
 		<property name="packagesToScan">
 			<list>
-				<value>rml.model</value>
+				<value>rml.model.po</value>
 			</list>
 		</property>
-
 		<!-- autoscan hbm for hiberante config -->
-		<!-- 
+		<!--
 		<property name="mappingDirectoryLocations">
 			<list>
-				<value>classpath:rml/hbm</value>
+				<value>classpath:/rml/model</value>
 			</list>
 		</property>
-		 -->
+		-->
+		<!--
+		<property name="mappingResources">
+			<list>
+				<value>Tauth.hbm.xml</value>
+				<value>Tmenu.hbm.xml</value>
+				<value>Tonline.hbm.xml</value>
+				<value>Trole.hbm.xml</value>
+				<value>Tuser.hbm.xml</value>
+				<value>Tusertrole.hbm.xml</value>
+				<value>Troletauth.hbm.xml</value>
+				<value>Tloguserlogin.hbm.xml</value>
+				<value>Tloguserreg.hbm.xml</value>
+			</list>
+		</property>
+		-->
 	</bean>
 
 	<!-- config transaction manager -->
