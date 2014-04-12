@@ -3,6 +3,19 @@
 	var centerTabs;
 	var tabsMenu;
 	$(function() {
+		
+		centerTabs = $('#centerTabs').tabs({
+			fit : true,
+			border : false,
+			onContextMenu : function(e, title) {
+				e.preventDefault();
+				tabsMenu.menu('show', {
+					left : e.pageX,
+					top : e.pageY
+				}).data('tabTitle', title);
+			}
+		});
+		
 		tabsMenu = $('#tabsMenu').menu({
 			onClick : function(item) {
 				var curTabTitle = $(this).data('tabTitle');
@@ -38,25 +51,14 @@
 				}
 			}
 		});
-
-		centerTabs = $('#centerTabs').tabs({
-			fit : true,
-			border : false,
-			onContextMenu : function(e, title) {
-				e.preventDefault();
-				tabsMenu.menu('show', {
-					left : e.pageX,
-					top : e.pageY
-				}).data('tabTitle', title);
-			}
-		});
+		
 	});
+	
 	function addTab(node) {
 		if (centerTabs.tabs('exists', node.text)) {
 			centerTabs.tabs('select', node.text);
 		} else {
-			if (node.attributes.url && node.attributes.url.length > 0) {
-			
+			if (node.attributes.url && node.attributes.url.length > 0) {			
 				centerTabs.tabs('add', {
 					title : node.text,
 					closable : true,
@@ -69,22 +71,10 @@
 						}
 					} ]
 				});
-			} else {
-				centerTabs.tabs('add', {
-					title : node.text,
-					closable : true,
-					iconCls : node.iconCls,
-					content : '<iframe src="error/err.jsp" frameborder="0" style="border:0;width:100%;height:99.4%;"></iframe>',
-					tools : [ {
-						iconCls : 'icon-mini-refresh',
-						handler : function() {
-							refreshTab(node.text);
-						}
-					} ]
-				});
-			}
+			} 
 		}
 	}
+	
 	function refreshTab(title) {
 		var tab = centerTabs.tabs('getTab', title);
 		centerTabs.tabs('update', {
@@ -95,8 +85,7 @@
 </script>
 <div id="centerTabs">
 	<div title="Home" data-options="border:false" style="overflow: hidden;">
-		<hr />
-		<div style="size:14px;color:blue">Framework</div>
+		<div style="size:16px;color:blue;margin-left:10px;margin-top:10px;">Framework</div>
 		<ul>
 			<li>Java Struts2 Spring Hiberante</li>
 			<li>JQuery-EasyUI Javascript JQuery Ajax</li>
@@ -107,7 +96,7 @@
 			<li>Maven</li>
 		</ul>
 		<hr />
-		<div>About</div>
+		<div style="size:16px;color:blue;margin-left:10px;">About me</div>
 		<ul>
 			<li>Github link</li>
 			<li>Linkedin link</li>

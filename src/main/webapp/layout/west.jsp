@@ -5,13 +5,15 @@
 	$(function() {
 
 		ctrlTree = $('#ctrlTree').tree({
-			url : '${pageContext.request.contextPath}/demo/menuAction!doNotNeedSession_tree.action',
+			url : '${pageContext.request.contextPath}/menuAction!doNotNeedSession_tree.action',
 			lines : true,
 			onLoadSuccess : function(node, data){			
 				$(this).tree('expandAll') 
 			},
 			onClick : function(node) {
-				addTab(node);
+				if (node.attributes.url) {
+					addTab(node);
+				}
 			},
 			onDblClick : function(node) {
 				if (node.state == 'closed') {

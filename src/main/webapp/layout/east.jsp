@@ -27,7 +27,7 @@
 		});
 
 		onlineDatagrid = $('#onlineDatagrid').datagrid({
-			url : '${pageContext.request.contextPath}/demo/onlineAction!doNotNeedSession_onlineDatagrid.action',
+			url : '${pageContext.request.contextPath}/onlineAction!doNotNeedSession_onlineDatagrid.action',
 			title : '',
 			iconCls : '',
 			fit : true,
@@ -72,7 +72,7 @@
 				}
 			} ] ],
 			onLoadSuccess : function(data) {
-				onlinePanel.panel('setTitle', '( ' + data.total + ' ) online');
+				onlinePanel.panel('setTitle', '(' + data.total + ') user online');
 			}
 		});
 
@@ -87,8 +87,13 @@
 			<table id="onlineDatagrid"></table>
 		</div>
 	</div>
-	<div data-options="region:'south',border:false" style="height:180px;overflow: hidden;">
-		<a href='http://www.google.com'>google</a>
+	<div data-options="region:'south',border:true" style="height:180px;overflow: hidden;">
+		<div style="margin-left:10px;margin-top:10px;"><strong>Link</strong></div>	
+		<ul>
+			<li><a href='http://www.google.com'>google</a></li>
+			<li><a href='http://www.google.com'>google</a></li>
+			<li><a href='http://www.google.com'>google</a></li>
+		</ul>	
 	</div>
 
 </div>

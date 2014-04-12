@@ -26,7 +26,7 @@
 	<div data-options="region:'east',title:'Other',split:true" style="width:220px;">
 		<jsp:include page="layout/east.jsp"></jsp:include>
 	</div>
-	<div data-options="region:'center',title:'Struts2.3.16+Spring3.2.8+Hibernate4.2.11+JQuery-EasyUI1.3.1+Oracle10g'" style="overflow: hidden;">
+	<div data-options="region:'center',title:'Struts2.3.16+Spring3.2.8+Hibernate4.2.11+JQuery-EasyUI1.3.1+Oracle10g+Maven'" style="overflow: hidden;">
 		<jsp:include page="layout/center.jsp"></jsp:include>
 	</div>
 
