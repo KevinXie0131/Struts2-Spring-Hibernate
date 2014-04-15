@@ -85,21 +85,21 @@
 </script>
 <div id="centerTabs">
 	<div title="Home" data-options="border:false" style="overflow: hidden;">
-		<div style="size:16px;color:blue;margin-left:10px;margin-top:10px;">Framework</div>
-		<ul>
-			<li>Java Struts2 Spring Hiberante</li>
-			<li>JQuery-EasyUI Javascript JQuery Ajax</li>
-			<li>Oracle10g</li>
-			<li>Jackson FastJson</li>
-			<li>Log4j</li>
-			<li>JUnit</li>
-			<li>Maven</li>
+		<div style="size:16px;color:blue;margin-left:10px;margin-top:10px;"><strong>Framework</strong></div>
+		<ul style="list-style:none">
+			<li style="margin-left:-20px;line-height:20px">Java Struts2 Spring Hiberante</li>
+			<li style="margin-left:-20px;line-height:20px">JQuery-EasyUI Javascript JQuery Ajax</li>
+			<li style="margin-left:-20px;line-height:20px">Oracle10g</li>
+			<li style="margin-left:-20px;line-height:20px">Jackson FastJson</li>
+			<li style="margin-left:-20px;line-height:20px">Log4j</li>
+			<li style="margin-left:-20px;line-height:20px">JUnit</li>
+			<li style="margin-left:-20px;line-height:20px">Maven</li>
 		</ul>
 		<hr />
-		<div style="size:16px;color:blue;margin-left:10px;">About me</div>
-		<ul>
-			<li>Github link</li>
-			<li>Linkedin link</li>
+		<div style="size:16px;color:blue;margin-left:10px;"><strong>About me</strong></div>
+		<ul style="list-style:none">
+			<li style="margin-left:-20px;line-height:20px">Github link</li>
+			<li style="margin-left:-20px;line-height:20px">Linkedin link</li>
 		</ul>
 		<hr />	
 	</div>

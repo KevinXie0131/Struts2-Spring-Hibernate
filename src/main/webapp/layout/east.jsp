@@ -89,11 +89,13 @@
 	</div>
 	<div data-options="region:'south',border:true" style="height:180px;overflow: hidden;">
 		<div style="margin-left:10px;margin-top:10px;"><strong>Link</strong></div>	
-		<ul>
-			<li><a href='http://www.google.com'>google</a></li>
-			<li><a href='http://www.google.com'>google</a></li>
-			<li><a href='http://www.google.com'>google</a></li>
-		</ul>	
+		<ul style="list-style:none">
+			<li style="margin-left:-20px;line-height:20px"><a href='http://www.apache.org/'>Apache Foundation</a></li>
+			<li style="margin-left:-20px;line-height:20px"><a href='http://struts.apache.org/development/2.x/'>Apache Struts2</a></li>
+			<li style="margin-left:-20px;line-height:20px"><a href='http://projects.spring.io/spring-framework/'>Spring Framework</a></li>
+			<li style="margin-left:-20px;line-height:20px"><a href='http://hibernate.org/'>Hibernate Framework</a></li>
+			<li style="margin-left:-20px;line-height:20px"><a href='http://www.jeasyui.com/'>jQuery EasyUI</a></li>
+		</ul> 
 	</div>
 
 </div>
