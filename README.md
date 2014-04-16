@@ -4,9 +4,9 @@
 Frameworks and Tools
 -----------------------------------
 * Java&IDE: JDK7 Eclipse MyEclipse
-* Backend:  Struts2.3.16 Spring3.2.8 Hiberante4.2.11
+* Backend:  Struts2.3.16 Spring3.2.8 Hibernate4.2.11
 * Frontend: JQuery-EasyUI1.3.1 Javascript JQuery Ajax
-* DataBase: Oracle10g
+* Database: Oracle10g
 * Web Server: Tomcat 7
 * Build Tool: Maven
 * Linux：CentoOS 6.4
