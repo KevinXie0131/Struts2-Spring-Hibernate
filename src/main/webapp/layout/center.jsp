@@ -85,23 +85,45 @@
 </script>
 <div id="centerTabs">
 	<div title="Home" data-options="border:false" style="overflow: hidden;">
-		<div style="size:16px;color:blue;margin-left:10px;margin-top:10px;"><strong>Framework</strong></div>
-		<ul style="list-style:none">
-			<li style="margin-left:-20px;line-height:20px">Java Struts2 Spring Hiberante</li>
-			<li style="margin-left:-20px;line-height:20px">JQuery-EasyUI Javascript JQuery Ajax</li>
-			<li style="margin-left:-20px;line-height:20px">Oracle10g</li>
-			<li style="margin-left:-20px;line-height:20px">Jackson FastJson</li>
-			<li style="margin-left:-20px;line-height:20px">Log4j</li>
-			<li style="margin-left:-20px;line-height:20px">JUnit</li>
-			<li style="margin-left:-20px;line-height:20px">Maven</li>
-		</ul>
-		<hr />
-		<div style="size:16px;color:blue;margin-left:10px;"><strong>About me</strong></div>
-		<ul style="list-style:none">
-			<li style="margin-left:-20px;line-height:20px">Github link</li>
-			<li style="margin-left:-20px;line-height:20px">Linkedin link</li>
-		</ul>
-		<hr />	
+		<div style="margin-left:10px;margin-top:5px;line-height:20px;"><strong style="color:blue;">Frameworks and Tools</strong>
+			<ul style="list-style:none;margin-left:-20px;margin-top:0px;">
+				<li>Java&IDE: JDK7 Eclipse MyEclipse</li>
+				<li>Backend:  Struts2.3.16 Spring3.2.8 Hiberante4.2.11</li>
+				<li>Frontend: JQuery-EasyUI1.3.1 Javascript JQuery Ajax</li>
+				<li>DataBase: Oracle10g</li>
+				<li>Web Server: Tomcat 7</li>
+				<li>Build Tool: Maven</li>
+				<li>Linux：CentoOS 6.4</li>
+				<li>Other: JFreeChart POI C3P0 JUnit Log4j Jackson FastJson</li>
+			</ul>
+		</div>
+		<hr/>
+		<div style="margin-left:10px;margin-top:0px;line-height:20px;"><strong style="color:blue;">System Features</strong>
+			<ul style="list-style:none;margin-left:-20px;margin-top:0px;">	
+				<li>Management of user, role and authority</li>		
+				<li>Management of equipment and document</li>
+				<li>Export equipment list to Excel file using POI</li>
+				<li>User access logs based on Spring AOP</li>
+				<li>Chart display of user statistics using JFreeChart</li>	
+				<li>Frontend and backend communicate by JSON</li>
+				<li>Cross-browser compatibility of Chrome/Firefox/IE</li>
+			</ul>
+		</div>
+		<hr/>
+		<div style="margin-left:10px;margin-top:0px;line-height:20px;"><strong style="color:blue;">About</strong>
+			<ul style="list-style:none;margin-left:-20px;margin-top:0px;">
+				<li><a href='https://github.com/ZhibingXie'>Github link</a></li>
+				<li><a href='http://www.linkedin.com/pub/zhibing-xie/45/555/b28'>Linkedin link</a></li>
+			</ul>
+		</div>
+		<hr/>
+		<div style="margin-left:10px;margin-top:0px;line-height:20px;"><strong style="color:blue;">Contact</strong>
+			<ul style="list-style:none;margin-left:-20px;margin-top:0px;">
+				<li>Zhibing Xie (Downtown, Toronto, Ontario, Canada)</li>
+				<li>Email: zhibing.x@gmail.com</li>
+			</ul>
+		</div>
+		<hr/>	
 	</div>
 </div>
 <div id="tabsMenu" style="width: 120px;display:none;">
