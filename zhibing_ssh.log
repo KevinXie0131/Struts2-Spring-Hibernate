@@ -1,0 +1,188 @@
+[INFO][2014-04-15 13:27:35,984][rml.test.TestLog]log info
+[WARN][2014-04-15 13:27:35,984][rml.test.TestLog]log warn
+[ERROR][2014-04-15 13:27:35,984][rml.test.TestLog]log error
+[INFO][2014-04-15 13:27:36,000][rml.test.TestSpring]info
+[INFO][2014-04-15 16:22:24,140][rml.test.TestLog]log info
+[WARN][2014-04-15 16:22:24,140][rml.test.TestLog]log warn
+[ERROR][2014-04-15 16:22:24,140][rml.test.TestLog]log error
+[INFO][2014-04-15 16:22:24,140][rml.test.TestSpring]info
+[INFO][2014-04-15 16:28:11,578][rml.test.TestLog]log info
+[WARN][2014-04-15 16:28:11,578][rml.test.TestLog]log warn
+[ERROR][2014-04-15 16:28:11,578][rml.test.TestLog]log error
+[INFO][2014-04-15 16:28:11,578][rml.test.TestSpring]info
+[INFO][2014-04-15 17:10:54,421][rml.test.TestLog]log info
+[WARN][2014-04-15 17:10:54,421][rml.test.TestLog]log warn
+[ERROR][2014-04-15 17:10:54,421][rml.test.TestLog]log error
+[INFO][2014-04-15 17:10:54,421][rml.test.TestSpring]info
+[INFO][2014-04-15 17:29:29,046][rml.test.TestLog]log info
+[WARN][2014-04-15 17:29:29,046][rml.test.TestLog]log warn
+[ERROR][2014-04-15 17:29:29,046][rml.test.TestLog]log error
+[INFO][2014-04-15 17:29:29,046][rml.test.TestSpring]info
+[INFO][2014-04-15 18:23:15,671][rml.test.TestLog]log info
+[WARN][2014-04-15 18:23:15,687][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:23:15,687][rml.test.TestLog]log error
+[INFO][2014-04-15 18:23:15,687][rml.test.TestSpring]info
+[INFO][2014-04-15 18:31:12,234][rml.test.TestLog]log info
+[WARN][2014-04-15 18:31:12,234][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:31:12,234][rml.test.TestLog]log error
+[INFO][2014-04-15 18:31:12,234][rml.test.TestSpring]info
+[INFO][2014-04-15 18:34:23,546][rml.test.TestLog]log info
+[WARN][2014-04-15 18:34:23,546][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:34:23,546][rml.test.TestLog]log error
+[INFO][2014-04-15 18:34:23,562][rml.test.TestSpring]info
+[INFO][2014-04-15 18:37:56,671][rml.test.TestLog]log info
+[WARN][2014-04-15 18:37:56,671][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:37:56,671][rml.test.TestLog]log error
+[INFO][2014-04-15 18:37:56,671][rml.test.TestSpring]info
+[INFO][2014-04-15 18:45:05,906][rml.test.TestLog]log info
+[WARN][2014-04-15 18:45:05,906][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:45:05,906][rml.test.TestLog]log error
+[INFO][2014-04-15 18:45:05,906][rml.test.TestSpring]info
+[INFO][2014-04-15 18:50:23,609][rml.test.TestLog]log info
+[WARN][2014-04-15 18:50:23,609][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:50:23,609][rml.test.TestLog]log error
+[INFO][2014-04-15 18:50:23,609][rml.test.TestSpring]info
+[INFO][2014-04-15 18:56:31,031][rml.test.TestLog]log info
+[WARN][2014-04-15 18:56:31,031][rml.test.TestLog]log warn
+[ERROR][2014-04-15 18:56:31,031][rml.test.TestLog]log error
+[INFO][2014-04-15 18:56:31,031][rml.test.TestSpring]info
+[INFO][2014-04-15 19:01:25,484][rml.test.TestLog]log info
+[WARN][2014-04-15 19:01:25,484][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:01:25,484][rml.test.TestLog]log error
+[INFO][2014-04-15 19:01:25,500][rml.test.TestSpring]info
+[INFO][2014-04-15 19:08:31,453][rml.test.TestLog]log info
+[WARN][2014-04-15 19:08:31,453][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:08:31,453][rml.test.TestLog]log error
+[INFO][2014-04-15 19:08:31,468][rml.test.TestSpring]info
+[INFO][2014-04-15 19:16:38,531][rml.test.TestLog]log info
+[WARN][2014-04-15 19:16:38,531][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:16:38,531][rml.test.TestLog]log error
+[INFO][2014-04-15 19:16:38,531][rml.test.TestSpring]info
+[INFO][2014-04-15 19:18:07,718][rml.test.TestLog]log info
+[WARN][2014-04-15 19:18:07,718][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:18:07,718][rml.test.TestLog]log error
+[INFO][2014-04-15 19:18:07,734][rml.test.TestSpring]info
+[INFO][2014-04-15 19:22:28,703][rml.test.TestLog]log info
+[WARN][2014-04-15 19:22:28,703][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:22:28,703][rml.test.TestLog]log error
+[INFO][2014-04-15 19:22:28,703][rml.test.TestSpring]info
+[INFO][2014-04-15 19:28:49,500][rml.test.TestLog]log info
+[WARN][2014-04-15 19:28:49,500][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:28:49,500][rml.test.TestLog]log error
+[INFO][2014-04-15 19:28:49,515][rml.test.TestSpring]info
+[INFO][2014-04-15 19:35:43,765][rml.test.TestLog]log info
+[WARN][2014-04-15 19:35:43,765][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:35:43,765][rml.test.TestLog]log error
+[INFO][2014-04-15 19:35:43,765][rml.test.TestSpring]info
+[INFO][2014-04-15 19:43:23,765][rml.test.TestLog]log info
+[WARN][2014-04-15 19:43:23,765][rml.test.TestLog]log warn
+[ERROR][2014-04-15 19:43:23,765][rml.test.TestLog]log error
+[INFO][2014-04-15 19:43:23,765][rml.test.TestSpring]info
+[INFO][2014-04-15 23:13:56,828][rml.test.TestLog]log info
+[WARN][2014-04-15 23:13:56,828][rml.test.TestLog]log warn
+[ERROR][2014-04-15 23:13:56,828][rml.test.TestLog]log error
+[INFO][2014-04-15 23:13:56,843][rml.test.TestSpring]info
+[INFO][2014-04-15 23:32:17,046][rml.test.TestLog]log info
+[WARN][2014-04-15 23:32:17,046][rml.test.TestLog]log warn
+[ERROR][2014-04-15 23:32:17,046][rml.test.TestLog]log error
+[INFO][2014-04-15 23:32:17,062][rml.test.TestSpring]info
+[INFO][2014-04-15 23:50:08,671][rml.test.TestLog]log info
+[WARN][2014-04-15 23:50:08,687][rml.test.TestLog]log warn
+[ERROR][2014-04-15 23:50:08,687][rml.test.TestLog]log error
+[INFO][2014-04-15 23:50:08,687][rml.test.TestSpring]info
+[INFO][2014-04-16 00:29:28,453][rml.test.TestLog]log info
+[WARN][2014-04-16 00:29:28,453][rml.test.TestLog]log warn
+[ERROR][2014-04-16 00:29:28,453][rml.test.TestLog]log error
+[INFO][2014-04-16 00:29:28,453][rml.test.TestSpring]info
+[INFO][2014-04-16 00:33:03,937][rml.test.TestLog]log info
+[WARN][2014-04-16 00:33:03,937][rml.test.TestLog]log warn
+[ERROR][2014-04-16 00:33:03,937][rml.test.TestLog]log error
+[INFO][2014-04-16 00:33:03,953][rml.test.TestSpring]info
+[INFO][2014-04-16 00:38:46,078][rml.test.TestLog]log info
+[WARN][2014-04-16 00:38:46,078][rml.test.TestLog]log warn
+[ERROR][2014-04-16 00:38:46,078][rml.test.TestLog]log error
+[INFO][2014-04-16 00:38:46,078][rml.test.TestSpring]info
+[INFO][2014-04-16 00:42:01,250][rml.test.TestLog]log info
+[WARN][2014-04-16 00:42:01,250][rml.test.TestLog]log warn
+[ERROR][2014-04-16 00:42:01,250][rml.test.TestLog]log error
+[INFO][2014-04-16 00:42:01,250][rml.test.TestSpring]info
+[INFO][2014-04-16 15:50:18,467][rml.test.TestLog]log info
+[WARN][2014-04-16 15:50:18,467][rml.test.TestLog]log warn
+[ERROR][2014-04-16 15:50:18,467][rml.test.TestLog]log error
+[INFO][2014-04-16 15:50:18,467][rml.test.TestSpring]info
+[INFO][2014-04-16 15:55:20,139][rml.test.TestLog]log info
+[WARN][2014-04-16 15:55:20,139][rml.test.TestLog]log warn
+[ERROR][2014-04-16 15:55:20,139][rml.test.TestLog]log error
+[INFO][2014-04-16 15:55:20,139][rml.test.TestSpring]info
+[INFO][2014-04-16 16:04:29,982][rml.test.TestLog]log info
+[WARN][2014-04-16 16:04:29,982][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:04:29,982][rml.test.TestLog]log error
+[INFO][2014-04-16 16:04:29,982][rml.test.TestSpring]info
+[INFO][2014-04-16 16:08:49,748][rml.test.TestLog]log info
+[WARN][2014-04-16 16:08:49,748][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:08:49,748][rml.test.TestLog]log error
+[INFO][2014-04-16 16:08:49,748][rml.test.TestSpring]info
+[INFO][2014-04-16 16:10:09,264][rml.test.TestLog]log info
+[WARN][2014-04-16 16:10:09,264][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:10:09,264][rml.test.TestLog]log error
+[INFO][2014-04-16 16:10:09,279][rml.test.TestSpring]info
+[INFO][2014-04-16 16:34:54,826][rml.test.TestLog]log info
+[WARN][2014-04-16 16:34:54,826][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:34:54,826][rml.test.TestLog]log error
+[INFO][2014-04-16 16:34:54,826][rml.test.TestSpring]info
+[INFO][2014-04-16 16:38:13,092][rml.test.TestLog]log info
+[WARN][2014-04-16 16:38:13,107][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:38:13,107][rml.test.TestLog]log error
+[INFO][2014-04-16 16:38:13,107][rml.test.TestSpring]info
+[INFO][2014-04-16 16:42:22,420][rml.test.TestLog]log info
+[WARN][2014-04-16 16:42:22,420][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:42:22,420][rml.test.TestLog]log error
+[INFO][2014-04-16 16:42:22,420][rml.test.TestSpring]info
+[INFO][2014-04-16 16:45:11,295][rml.test.TestLog]log info
+[WARN][2014-04-16 16:45:11,295][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:45:11,295][rml.test.TestLog]log error
+[INFO][2014-04-16 16:45:11,295][rml.test.TestSpring]info
+[INFO][2014-04-16 16:48:25,451][rml.test.TestLog]log info
+[WARN][2014-04-16 16:48:25,451][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:48:25,451][rml.test.TestLog]log error
+[INFO][2014-04-16 16:48:25,451][rml.test.TestSpring]info
+[INFO][2014-04-16 16:54:44,201][rml.test.TestLog]log info
+[WARN][2014-04-16 16:54:44,201][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:54:44,201][rml.test.TestLog]log error
+[INFO][2014-04-16 16:54:44,201][rml.test.TestSpring]info
+[INFO][2014-04-16 16:58:05,404][rml.test.TestLog]log info
+[WARN][2014-04-16 16:58:05,404][rml.test.TestLog]log warn
+[ERROR][2014-04-16 16:58:05,404][rml.test.TestLog]log error
+[INFO][2014-04-16 16:58:05,420][rml.test.TestSpring]info
+[INFO][2014-04-16 17:01:36,357][rml.test.TestLog]log info
+[WARN][2014-04-16 17:01:36,357][rml.test.TestLog]log warn
+[ERROR][2014-04-16 17:01:36,357][rml.test.TestLog]log error
+[INFO][2014-04-16 17:01:36,373][rml.test.TestSpring]info
+[INFO][2014-04-16 17:04:42,123][rml.test.TestLog]log info
+[WARN][2014-04-16 17:04:42,139][rml.test.TestLog]log warn
+[ERROR][2014-04-16 17:04:42,139][rml.test.TestLog]log error
+[INFO][2014-04-16 17:04:42,139][rml.test.TestSpring]info
+[INFO][2014-04-16 17:08:17,873][rml.test.TestLog]log info
+[WARN][2014-04-16 17:08:17,873][rml.test.TestLog]log warn
+[ERROR][2014-04-16 17:08:17,873][rml.test.TestLog]log error
+[INFO][2014-04-16 17:08:17,873][rml.test.TestSpring]info
+[INFO][2014-04-16 17:11:25,982][rml.test.TestLog]log info
+[WARN][2014-04-16 17:11:25,982][rml.test.TestLog]log warn
+[ERROR][2014-04-16 17:11:25,982][rml.test.TestLog]log error
+[INFO][2014-04-16 17:11:25,982][rml.test.TestSpring]info
+[INFO][2014-04-16 17:14:42,326][rml.test.TestLog]log info
+[WARN][2014-04-16 17:14:42,326][rml.test.TestLog]log warn
+[ERROR][2014-04-16 17:14:42,326][rml.test.TestLog]log error
+[INFO][2014-04-16 17:14:42,326][rml.test.TestSpring]info
+[INFO][2014-04-16 18:02:23,404][rml.test.TestLog]log info
+[WARN][2014-04-16 18:02:23,404][rml.test.TestLog]log warn
+[ERROR][2014-04-16 18:02:23,404][rml.test.TestLog]log error
+[INFO][2014-04-16 18:02:23,404][rml.test.TestSpring]info
+[INFO][2014-04-16 18:42:45,279][rml.test.TestLog]log info
+[WARN][2014-04-16 18:42:45,279][rml.test.TestLog]log warn
+[ERROR][2014-04-16 18:42:45,279][rml.test.TestLog]log error
+[INFO][2014-04-16 18:42:45,279][rml.test.TestSpring]info
+[INFO][2014-04-16 19:09:06,935][rml.test.TestLog]log info
+[WARN][2014-04-16 19:09:06,935][rml.test.TestLog]log warn
+[ERROR][2014-04-16 19:09:06,935][rml.test.TestLog]log error
+[INFO][2014-04-16 19:09:06,951][rml.test.TestSpring]info
