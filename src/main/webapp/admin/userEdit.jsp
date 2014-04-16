@@ -1,6 +1,6 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<div style="padding: 5px;">
+<div style="padding: 5px;overflow: hidden;">
 	<form id="userForm" method="post">
 		<input name="cid" type="hidden" />
 		<table class="tableForm">
@@ -9,7 +9,8 @@
 				<td><input name="cname" class="easyui-validatebox" data-options="required:'true',missingMessage:'Username required'" style="width: 150px;" />
 				</td>
 				<th style="width: 80px;">Role</th>
-				<td><input name="roleIds" style="width: 150px;" /></td>
+				<td><input name="roleIds" style="width: 150px;" />
+				</td>
 			</tr>
 			<tr>
 				<th>Password</th>

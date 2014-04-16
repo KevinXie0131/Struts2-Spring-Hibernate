@@ -162,8 +162,7 @@
 						cname : rows[0].cname,
 						cproducer : rows[0].cproducer,
 						cdesc : rows[0].cdesc,
-						cno : rows[0].cno
-						
+						cno : rows[0].cno			
 					});
 				}
 			});
