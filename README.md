@@ -1,4 +1,4 @@
-Struts2.3.16+Spring3.2.8+Hibernate4.2.11+JQuery-EasyUI1.3.1+Oracle10g+Maven
+﻿Struts2.3+Spring3+Hibernate4
 ===============
 
 Frameworks and Tools
@@ -24,7 +24,7 @@ System Features
 
 Demo Link
 -----------------------------------
-[Struts2-Spring-Hibernate](http://141.117.68.121/zhibing_ssh)
+[Struts2-Spring-Hibernate](http://www.google.com)
 
 About
 -----------------------------------
