@@ -81,29 +81,22 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 	<!-- interceptor for transaction manager -->
 	<tx:advice id="transactionAdvice" transaction-manager="transactionManager">
 		<tx:attributes>
-			<tx:method name="add*" />
-			<tx:method name="save*" />
-			<tx:method name="update*" />
-			<tx:method name="modify*" />
-			<tx:method name="edit*" />
-			<tx:method name="delete*" />
-			<tx:method name="remove*" />
-			<tx:method name="repair" />
-			<tx:method name="deleteAndRepair" />
-
-			<tx:method name="get*" propagation="SUPPORTS" />
-			<tx:method name="find*" propagation="SUPPORTS" />
-			<tx:method name="load*" propagation="SUPPORTS" />
-			<tx:method name="search*" propagation="SUPPORTS" />
-			<tx:method name="datagrid*" propagation="SUPPORTS" />
-
-			<tx:method name="*" propagation="SUPPORTS" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="edit*" propagation="REQUIRED" />
+			<tx:method name="saveOrUpdate*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+			<tx:method name="repair*" propagation="REQUIRED" />
+			<tx:method name="upload*" propagation="REQUIRED" />
+			<tx:method name="roleEdit*" propagation="REQUIRED" />
+			
+			<tx:method name="*" propagation="REQUIRED" read-only="true" />
 		</tx:attributes>
 	</tx:advice>
 	<aop:config>
 		<aop:pointcut id="transactionPointcut" expression="execution(* rml.service..*Impl.*(..))" />
 		<aop:advisor pointcut-ref="transactionPointcut" advice-ref="transactionAdvice" />
 	</aop:config>
-
 
 </beans>
