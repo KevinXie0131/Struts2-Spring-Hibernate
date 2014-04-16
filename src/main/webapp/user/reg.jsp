@@ -18,8 +18,7 @@
 				$(this).find('input[name=cname]').focus();
 			},
 			onClose : function() {
-				$(this).find('input').val('');
-				$('div.validatebox-tip').remove();
+			//	$(this).find('input').val('');
 				loginDialog.find('input[name=cname]').focus();
 			}
 		}).dialog('close');
@@ -53,11 +52,11 @@
 		<table class="tableForm">
 			<tr>
 				<th style="width: 55px;">Username</th>
-				<td><input name="cname" class="easyui-validatebox" data-options="required:'true',missingMessage:'Username required'" /></td>
+				<td><input name="cname" class="easyui-validatebox" data-options="required:'true',missingMessage:'Username required'" value="admin" /></td>
 			</tr>
 			<tr>
 				<th>Password</th>
-				<td><input name="cpwd" type="password" class="easyui-validatebox" data-options="required:'true',missingMessage:'Password required'" /></td>
+				<td><input name="cpwd" type="password" class="easyui-validatebox" data-options="required:'true',missingMessage:'Password required'" value="admin" /></td>
 			</tr>
 			<tr>
 				<th>Reenter</th>

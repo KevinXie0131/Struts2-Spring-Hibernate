@@ -21,8 +21,8 @@
 			nowrap : false,
 			border : false,
 			idField : 'cid',
-			sortName : 'cname',
-			sortOrder : 'desc',
+			sortName : 'cdatetime',
+			sortOrder : 'asc',
 			checkOnSelect : false,
 			selectOnCheck : true,
 			frozenColumns : [ [ {
