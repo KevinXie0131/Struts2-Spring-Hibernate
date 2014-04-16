@@ -88,9 +88,9 @@
 		<div style="margin-left:10px;margin-top:5px;line-height:20px;"><strong style="color:blue;">Frameworks and Tools</strong>
 			<ul style="list-style:none;margin-left:-20px;margin-top:0px;">
 				<li>Java&IDE: JDK7 Eclipse MyEclipse</li>
-				<li>Backend:  Struts2.3.16 Spring3.2.8 Hiberante4.2.11</li>
+				<li>Backend:  Struts2.3.16 Spring3.2.8 Hibernate4.2.11</li>
 				<li>Frontend: JQuery-EasyUI1.3.1 Javascript JQuery Ajax</li>
-				<li>DataBase: Oracle10g</li>
+				<li>Database: Oracle10g</li>
 				<li>Web Server: Tomcat 7</li>
 				<li>Build Tool: Maven</li>
 				<li>Linux：CentoOS 6.4</li>
