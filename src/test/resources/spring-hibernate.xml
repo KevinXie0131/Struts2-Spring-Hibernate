@@ -9,46 +9,24 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 ">
 
 	<!-- Database config -->
-	<bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
-		<property name="url" value="${jdbc_url}" />
-		<property name="username" value="${jdbc_username}" />
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${driverClassName}"/>
+        <property name="jdbcUrl" value="${jdbc_url}" />
+		<property name="user" value="${jdbc_username}" />
 		<property name="password" value="${jdbc_password}" />
-
-		<!-- initial size -->
-		<property name="initialSize" value="0" />
-		<!-- max connection-->
-		<property name="maxActive" value="20" />
-		<!-- max idle-->
-		<property name="maxIdle" value="20" />
-		<!-- min idle -->
-		<property name="minIdle" value="0" />
-		<!-- max waiting time -->
-		<property name="maxWait" value="60000" />
-
-		<!-- <property name="poolPreparedStatements" value="true" /> <property name="maxPoolPreparedStatementPerConnectionSize" value="33" /> -->
-
-		<property name="validationQuery" value="${validationQuery}" />
-		<property name="testOnBorrow" value="false" />
-		<property name="testOnReturn" value="false" />
-		<property name="testWhileIdle" value="true" />
-
-		<!-- time between eviction check (ms) -->
-		<property name="timeBetweenEvictionRunsMillis" value="60000" />
-		<!-- min length of a connection(ms) -->
-		<property name="minEvictableIdleTimeMillis" value="25200000" />
-
-		<!-- remove abandoned feature -->
-		<property name="removeAbandoned" value="true" />
-		<!-- 1800s=30min -->
-		<property name="removeAbandonedTimeout" value="1800" />
-		<!-- log for abanded -->
-		<property name="logAbandoned" value="true" />
-
-		<!-- supervise database -->
-		<!-- <property name="filters" value="stat" /> -->
-		<property name="filters" value="mergeStat" />
-	</bean>
-
+        
+        <property name="minPoolSize" value="5" />
+		<property name="maxPoolSize" value="30" />
+		<property name="initialPoolSize" value="10"/>
+		<property name="maxIdleTime" value="60"/>
+		<property name="acquireIncrement" value="5" />
+		<property name="maxStatements" value="0" />
+		<property name="checkoutTimeout" value="1000" />
+		<property name="idleConnectionTestPeriod" value="60" />
+		<property name="acquireRetryAttempts" value="30" />
+		<property name="breakAfterAcquireFailure" value="true" />
+    </bean>	
+ 	
 	<!-- config hibernate session factory -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
@@ -64,18 +42,32 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 		<!-- autoscan annotation for hiberante config -->
 		<property name="packagesToScan">
 			<list>
-				<value>rml.model</value>
+				<value>rml.model.po</value>
 			</list>
 		</property>
-
 		<!-- autoscan hbm for hiberante config -->
-		<!-- 
+		<!--
 		<property name="mappingDirectoryLocations">
 			<list>
-				<value>classpath:rml/hbm</value>
+				<value>classpath:/rml/model</value>
 			</list>
 		</property>
-		 -->
+		-->
+		<!--
+		<property name="mappingResources">
+			<list>
+				<value>Tauth.hbm.xml</value>
+				<value>Tmenu.hbm.xml</value>
+				<value>Tonline.hbm.xml</value>
+				<value>Trole.hbm.xml</value>
+				<value>Tuser.hbm.xml</value>
+				<value>Tusertrole.hbm.xml</value>
+				<value>Troletauth.hbm.xml</value>
+				<value>Tloguserlogin.hbm.xml</value>
+				<value>Tloguserreg.hbm.xml</value>
+			</list>
+		</property>
+		-->
 	</bean>
 
 	<!-- config transaction manager -->
