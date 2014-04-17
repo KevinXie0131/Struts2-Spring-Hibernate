@@ -68,11 +68,10 @@
 	<listener>
 		<listener-class>rml.listener.OnlineListener</listener-class>
 	</listener>
-	
+	<!-- session timeout -->
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>
-	
 	<!-- config error page -->
 	<error-page>
 		<error-code>404</error-code>
