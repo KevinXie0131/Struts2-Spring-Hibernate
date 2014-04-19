@@ -95,6 +95,7 @@
 	}
 </script>
 <div id="loginDialog" style="width:250px;height:160px;display: none;overflow: hidden;">
+	<div style="color:blue;">Default account: admin/admin</div>
 	<div id="loginTabs" data-options="fit:true,border:false">
 		<div align="center">
 			<form id="loginInputForm" method="post">
