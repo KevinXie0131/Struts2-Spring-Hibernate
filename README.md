@@ -4,7 +4,7 @@
 Frameworks and Tools
 -----------------------------------
 * Java&IDE: JDK7 Eclipse MyEclipse
-* Backend:  Struts2.3.16 Spring3.2.8 Hibernate4.2.11
+* Backend:  Struts2.3.16 Spring3.2.8 Hibernate4.2.11 (Configured by annotation)
 * Frontend: JQuery-EasyUI1.3.1 Javascript JQuery Ajax
 * Database: Oracle10g
 * Web Server: Tomcat 7
@@ -33,5 +33,7 @@ About
     
 Contact
 -----------------------------------
-* Zhibing Xie (Downtown, Toronto, Ontario, Canada)
+* Zhibing Xie
+* Addrss: Downtown, Toronto, Ontario, Canada
 * Email: zhibing.x@gmail.com
+* Tel: (647) 974-7603
