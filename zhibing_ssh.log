@@ -677,3 +677,146 @@ Caused by: com.mchange.v2.resourcepool.TimeoutException: internal -- timeout at 
 [WARN][2014-04-18 15:55:45,156][rml.test.TestLog]log warn
 [ERROR][2014-04-18 15:55:45,156][rml.test.TestLog]log error
 [INFO][2014-04-18 15:55:45,156][rml.test.TestSpring]done
+[INFO][2014-04-19 01:41:07,703][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1a99561: startup date [Sat Apr 19 01:41:07 EDT 2014]; root of context hierarchy
+[INFO][2014-04-19 01:41:07,859][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-core.xml]
+[INFO][2014-04-19 01:41:08,390][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-04-19 01:41:08,843][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-04-19 01:41:08,984][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19ba640: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-04-19 01:41:09,281][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO][2014-04-19 01:41:09,328][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.0.2 [built 26-September-2005 12:55:26 -0400; debug? true; trace: 10]
+[INFO][2014-04-19 01:41:10,328][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-04-19 01:41:10,328][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-04-19 01:41:10,343][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-04-19 01:41:10,343][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-04-19 01:41:10,640][com.mchange.v2.c3p0.PoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@717d91[ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 1000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 717d91, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, loginTimeout -> 0, maxIdleTime -> 60, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+[INFO][2014-04-19 01:41:11,593][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-04-19 01:41:11,609][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-04-19 01:41:11,625][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-04-19 01:41:11,640][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-04-19 01:41:12,171][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-04-19 01:41:12,187][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-04-19 01:41:13,171][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-04-19 01:41:13,171][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-04-19 01:41:13,265][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-04-19 01:41:20,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TAUTH
+[INFO][2014-04-19 01:41:20,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-04-19 01:41:20,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_qn08g3frj15rqyhvf2yj393jf]
+[INFO][2014-04-19 01:41:20,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008447]
+[INFO][2014-04-19 01:41:21,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TDOC
+[INFO][2014-04-19 01:41:21,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-04-19 01:41:21,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:41:21,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008450]
+[INFO][2014-04-19 01:41:22,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TEQUIP
+[INFO][2014-04-19 01:41:22,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-04-19 01:41:22,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:41:22,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008453]
+[INFO][2014-04-19 01:41:22,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TLOG
+[INFO][2014-04-19 01:41:22,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-04-19 01:41:22,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:41:22,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008457]
+[INFO][2014-04-19 01:41:23,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TMENU
+[INFO][2014-04-19 01:41:23,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-04-19 01:41:23,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_4flq4kxk5abodjaelktg8b4g9]
+[INFO][2014-04-19 01:41:23,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008460]
+[INFO][2014-04-19 01:41:23,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TONLINE
+[INFO][2014-04-19 01:41:23,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-04-19 01:41:23,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:41:23,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008465]
+[INFO][2014-04-19 01:41:24,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TROLE
+[INFO][2014-04-19 01:41:24,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-04-19 01:41:24,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:41:24,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008468]
+[INFO][2014-04-19 01:41:24,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TROLETAUTH
+[INFO][2014-04-19 01:41:24,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-04-19 01:41:24,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2lr903gcwvo7vftjbpmvxssua, fk_ja4xfnh77fc0pvtgv21skjyhp]
+[INFO][2014-04-19 01:41:24,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008470]
+[INFO][2014-04-19 01:41:25,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TUSER
+[INFO][2014-04-19 01:41:25,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-04-19 01:41:25,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:41:25,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008474, uk_5dgv7oklli5x0wabbj24f9xel]
+[INFO][2014-04-19 01:41:25,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TUSERTROLE
+[INFO][2014-04-19 01:41:25,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-04-19 01:41:25,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_35i7hui0jbv2e1ek2b4ae85g, fk_1hq3ibkcwdiknog2nmp0e20qa]
+[INFO][2014-04-19 01:41:25,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008476]
+[INFO][2014-04-19 01:41:25,531][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-04-19 01:41:25,812][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource@717d91[ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 1000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 717d91, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, loginTimeout -> 0, maxIdleTime -> 60, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-04-19 01:41:26,062][rml.test.TestDao]rml.service.impl.UserServiceImpl@edf4c8
+[INFO][2014-04-19 01:41:26,250][rml.service.impl.LogServiceImpl]Sat Apr 19 01:41:26 EDT 2014 around
+[INFO][2014-04-19 01:41:26,250][rml.service.impl.LogServiceImpl]save
+[INFO][2014-04-19 01:41:26,343][rml.test.TestLog]log info
+[WARN][2014-04-19 01:41:26,343][rml.test.TestLog]log warn
+[ERROR][2014-04-19 01:41:26,343][rml.test.TestLog]log error
+[INFO][2014-04-19 01:41:26,359][rml.test.TestSpring]done
+[INFO][2014-04-19 01:44:29,796][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@29ab3e: startup date [Sat Apr 19 01:44:29 EDT 2014]; root of context hierarchy
+[INFO][2014-04-19 01:44:29,937][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-core.xml]
+[INFO][2014-04-19 01:44:30,453][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-04-19 01:44:30,921][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-04-19 01:44:31,000][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@19cd75a: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,dataSource,sessionFactory,transactionManager,transactionAdvice,org.springframework.aop.config.internalAutoProxyCreator,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-04-19 01:44:31,218][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO][2014-04-19 01:44:31,265][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.0.2 [built 26-September-2005 12:55:26 -0400; debug? true; trace: 10]
+[INFO][2014-04-19 01:44:32,093][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-04-19 01:44:32,109][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-04-19 01:44:32,109][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-04-19 01:44:32,125][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-04-19 01:44:32,421][com.mchange.v2.c3p0.PoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource@e7f6eb[ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 1000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> e7f6eb, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, loginTimeout -> 0, maxIdleTime -> 60, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]
+[INFO][2014-04-19 01:44:33,140][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-04-19 01:44:33,156][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-04-19 01:44:33,171][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-04-19 01:44:33,171][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-04-19 01:44:33,562][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-04-19 01:44:33,578][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-04-19 01:44:34,312][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-04-19 01:44:34,312][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-04-19 01:44:34,328][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-04-19 01:44:34,484][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TAUTH
+[INFO][2014-04-19 01:44:34,484][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-04-19 01:44:34,484][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_qn08g3frj15rqyhvf2yj393jf]
+[INFO][2014-04-19 01:44:34,484][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008447]
+[INFO][2014-04-19 01:44:34,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TDOC
+[INFO][2014-04-19 01:44:34,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-04-19 01:44:34,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:44:34,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008450]
+[INFO][2014-04-19 01:44:34,562][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TEQUIP
+[INFO][2014-04-19 01:44:34,562][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-04-19 01:44:34,562][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:44:34,562][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008453]
+[INFO][2014-04-19 01:44:34,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TLOG
+[INFO][2014-04-19 01:44:34,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-04-19 01:44:34,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:44:34,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008457]
+[INFO][2014-04-19 01:44:34,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TMENU
+[INFO][2014-04-19 01:44:34,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-04-19 01:44:34,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_4flq4kxk5abodjaelktg8b4g9]
+[INFO][2014-04-19 01:44:34,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008460]
+[INFO][2014-04-19 01:44:34,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TONLINE
+[INFO][2014-04-19 01:44:34,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-04-19 01:44:34,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:44:34,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008465]
+[INFO][2014-04-19 01:44:34,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TROLE
+[INFO][2014-04-19 01:44:34,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-04-19 01:44:34,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:44:34,687][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008468]
+[INFO][2014-04-19 01:44:34,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TROLETAUTH
+[INFO][2014-04-19 01:44:34,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-04-19 01:44:34,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2lr903gcwvo7vftjbpmvxssua, fk_ja4xfnh77fc0pvtgv21skjyhp]
+[INFO][2014-04-19 01:44:34,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008470]
+[INFO][2014-04-19 01:44:34,765][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TUSER
+[INFO][2014-04-19 01:44:34,765][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-04-19 01:44:34,765][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-04-19 01:44:34,765][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008474, uk_5dgv7oklli5x0wabbj24f9xel]
+[INFO][2014-04-19 01:44:34,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.TUSERTROLE
+[INFO][2014-04-19 01:44:34,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-04-19 01:44:34,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_35i7hui0jbv2e1ek2b4ae85g, fk_1hq3ibkcwdiknog2nmp0e20qa]
+[INFO][2014-04-19 01:44:34,796][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c008476]
+[INFO][2014-04-19 01:44:34,796][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-04-19 01:44:34,984][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource@e7f6eb[ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> true, checkoutTimeout -> 1000, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> e7f6eb, idleConnectionTestPeriod -> 60, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, loginTimeout -> 0, maxIdleTime -> 60, maxPoolSize -> 30, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 300, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-04-19 01:44:35,203][rml.test.TestDao]rml.service.impl.UserServiceImpl@17bcd4
+[WARN][2014-04-19 01:44:35,750][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 50.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2014-04-19 01:44:36,062][rml.test.TestLog]log info
+[WARN][2014-04-19 01:44:36,062][rml.test.TestLog]log warn
+[ERROR][2014-04-19 01:44:36,062][rml.test.TestLog]log error
+[INFO][2014-04-19 01:44:36,078][rml.test.TestSpring]done
+[INFO][2014-04-19 01:46:32,828][rml.test.TestLog]log info
+[WARN][2014-04-19 01:46:32,843][rml.test.TestLog]log warn
+[ERROR][2014-04-19 01:46:32,843][rml.test.TestLog]log error
+[INFO][2014-04-19 01:46:32,843][rml.test.TestSpring]done
