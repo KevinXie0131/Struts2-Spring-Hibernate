@@ -15,6 +15,10 @@ public interface BaseDaoI<T> {
 	public void saveOrUpdate(T o);
 
 	public List<T> find(String hql);
+	
+	public List findSQL(String hql, Class T);
+	
+	public List findSQL(String hql);
 
 	public List<T> find(String hql, Object[] param);
 
