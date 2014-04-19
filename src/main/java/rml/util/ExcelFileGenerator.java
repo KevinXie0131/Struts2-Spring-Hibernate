@@ -1,7 +1,3 @@
-/**
- * 系统数据导出Excel 生成器
- * @version 1.0
- */
 package rml.util;
 
 import java.io.OutputStream;
@@ -15,20 +11,19 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.hssf.util.HSSFColor;
 
-
 public class ExcelFileGenerator {
 
-	private final int SPLIT_COUNT = 1500; //Excel每个工作簿的行数
+	private final int SPLIT_COUNT = 1500;
 
-	private ArrayList fieldName = null; //excel标题数据集
+	private ArrayList fieldName = null; //excel title
 
-	private ArrayList fieldData = null; //excel数据内容	
+	private ArrayList fieldData = null; //excel content	
 
 	private HSSFWorkbook workBook = null;
 
 	/**
-	 * 构造器
-	 * @param fieldName 结果集的字段名
+	 * Generator
+	 * @param fieldName 
 	 * @param data
 	 */
 	public ExcelFileGenerator(ArrayList fieldName, ArrayList fieldData) {
@@ -38,7 +33,7 @@ public class ExcelFileGenerator {
 	}
 
 	/**
-	 * 创建HSSFWorkbook对象
+	 * create HSSFWorkbook
 	 * @return HSSFWorkbook
 	 */
 	public HSSFWorkbook createWorkbook() {
@@ -57,23 +52,15 @@ public class ExcelFileGenerator {
 			HSSFSheet sheet = workBook.createSheet("Page " + i);
 			HSSFRow headRow = sheet.createRow((short) 0); 
 			for (int j = 0; j < fieldName.size(); j++) {
-				HSSFCell cell = headRow.createCell((short) j);
-				//添加样式
+				HSSFCell cell = headRow.createCell((short) j);			 
 				cell.setCellType(HSSFCell.CELL_TYPE_STRING);
 			//	cell.setEncoding(HSSFCell.ENCODING_UTF_16);
-				//添加样式
-				//设置所有单元格的宽度
-				sheet.setColumnWidth((short)j, (short)6000);
-				//创建样式(使用工作本的对象创建)
+				sheet.setColumnWidth((short)j, (short)6000); 
 				HSSFCellStyle cellStyle = workBook.createCellStyle();
-				//创建字体的对象
 				HSSFFont font = workBook.createFont();
-				//将字体加粗
 				font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD);
-				//设置字体的颜色
 				short color = HSSFColor.RED.index;
 				font.setColor(color);
-				//将新设置的字体属性放置到样式中
 				cellStyle.setFont(font);
 				if(fieldName.get(j) != null){
 					cell.setCellStyle(cellStyle);
@@ -86,7 +73,7 @@ public class ExcelFileGenerator {
 
 			for (int k = 0; k < (rows < SPLIT_COUNT ? rows : SPLIT_COUNT); k++) {
 				HSSFRow row = sheet.createRow((short) (k + 1));
-				//将数据内容放入excel单元格
+				//input excel cell 
 				ArrayList rowList = (ArrayList) fieldData.get((i - 1)
 						* SPLIT_COUNT + k);
 				for (int n = 0; n < rowList.size(); n++) {
