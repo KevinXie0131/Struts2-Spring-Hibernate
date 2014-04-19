@@ -41,12 +41,12 @@ public class OnlineListener implements ServletContextListener, ServletContextAtt
 	}
 
 	/**
-	 * 向session里增加属性时调用(用户成功登陆后会调用)
+	 * called when add attributes to session (called after successful login)
 	 */
 	public void attributeAdded(HttpSessionBindingEvent evt) {
 		String name = evt.getName();
-		logger.debug("向session存入属性：" + name);
-		if (ResourceUtil.getSessionInfoName().equals(name)) {// 如果存入的属性是sessionInfo的话
+		logger.debug("the name of attribute saved in session: " + name);
+		if (ResourceUtil.getSessionInfoName().equals(name)) {// the name of attribute saved in session is 'sessionInfo'
 			HttpSession session = evt.getSession();
 			SessionInfo sessionInfo = (SessionInfo) session.getAttribute(name);
 			if (sessionInfo != null) {
@@ -57,10 +57,10 @@ public class OnlineListener implements ServletContextListener, ServletContextAtt
 	}
 
 	/**
-	 * 服务器初始化时调用
+	 * called when server initialized
 	 */
 	public void contextInitialized(ServletContextEvent evt) {
-		logger.debug("服务器启动");
+		logger.debug("server started");
 		ctx = WebApplicationContextUtils.getWebApplicationContext(evt.getServletContext());
 	}
 
@@ -77,12 +77,12 @@ public class OnlineListener implements ServletContextListener, ServletContextAtt
 	}
 
 	/**
-	 * session销毁(用户退出系统时会调用)
+	 * session destroyed(called after logout)
 	 */
 	public void sessionDestroyed(HttpSessionEvent evt) {
 		HttpSession session = evt.getSession();
 		if (session != null) {
-			logger.debug("session销毁：" + session.getId());
+			logger.debug("session destroyed: " + session.getId());
 			SessionInfo sessionInfo = (SessionInfo) session.getAttribute(ResourceUtil.getSessionInfoName());
 			if (sessionInfo != null) {
 				OnlineServiceI onlineService = (OnlineServiceI) ctx.getBean("onlineService");
@@ -116,7 +116,7 @@ public class OnlineListener implements ServletContextListener, ServletContextAtt
 	}
 
 	public void contextDestroyed(ServletContextEvent evt) {
-		logger.debug("服务器关闭");
+		logger.debug("server closed");
 	}
 
 	public void attributeReplaced(ServletRequestAttributeEvent arg0) {
