@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import rml.service.TestService;
+import rml.service.UserServiceI;
 
 public class TestSpring {
 	
@@ -13,15 +13,16 @@ public class TestSpring {
 	
 	@Test
 	public void test() {
-	//	ApplicationContext ac = new ClassPathXmlApplicationContext(new String[] { "classpath:spring.xml" });
+	//	ApplicationContext ac = new ClassPathXmlApplicationContext(new String[] { "classpath:spring-core.xml", "classpath:spring-hibernate.xml" });
 
 	//	UserServiceI userService = (UserServiceI) ac.getBean("userService");
+	//	logger.info(userService);
 	//	userService.test();
 	
 	//	TestService testService = (TestService) ac.getBean("testService");		
 	//	testService.test();
 		
-		logger.info("info");
+		logger.info("done");
 	}
 
 }
