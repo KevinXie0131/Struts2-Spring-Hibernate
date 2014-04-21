@@ -1,22 +1,44 @@
 package rml.action;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
+import org.apache.struts2.interceptor.ServletRequestAware;
+import org.apache.struts2.interceptor.ServletResponseAware;
 
 import com.alibaba.fastjson.JSON;
+import com.opensymphony.xwork2.ActionSupport;
 
-//import com.alibaba.fastjson.JSON;
-import rml.util.JacksonJsonUtil;
-
+/**
+ * Bsee Action
+ * 
+ */
 @ParentPackage("basePackage")
 @Namespace("/")
-public class BaseAction {
+public class BaseAction extends ActionSupport implements ServletRequestAware,ServletResponseAware{
    
+	protected HttpServletRequest request = null;
+	
+	protected HttpServletResponse response = null;
+
+	public void setServletRequest(HttpServletRequest request) {
+		this.request = request;	
+	}
+	
+	public void setServletResponse(HttpServletResponse response) {
+		this.response = response;	
+	}
+	/**
+	 * respond by JSON
+	 * 
+	 * @param object
+	 * @throws IOException
+	 */
 	public void writeJson(Object object)  {
 		try {
 			String json = JSON.toJSONStringWithDateFormat(object, "yyyy-MM-dd HH:mm:ss");		
