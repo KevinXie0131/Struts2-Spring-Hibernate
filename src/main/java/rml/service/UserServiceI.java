@@ -1,18 +1,29 @@
 package rml.service;
 
-import rml.pageModel.DataGrid;
-import rml.pageModel.User;
+import java.util.List;
+
+import rml.model.vo.DataGrid;
+import rml.model.vo.RoleChart;
+import rml.model.vo.User;
 
 public interface UserServiceI {
 
-	public User save(User user);
-
 	public User login(User user);
 
+	public void save(User user);
+
+	public void update(User user);
+
+	public void delete(String ids);
+
+	public void roleEdit(User user);
+
+	public void editUserInfo(User user);
+	
 	public DataGrid datagrid(User user);
 
-	public void remove(String ids);
+	public List<User> combobox(User user);
 	
-	public User edit(User user);
-	
+	public List<RoleChart> countRole();
+
 }
