@@ -24,7 +24,7 @@ System Features
 
 Demo Link
 -----------------------------------
-[Struts2-Spring-Hibernate](http://www.google.com)
+[Struts2-Spring-Hibernate](http://141.117.68.121/zhibing_ssh/)
 
 About
 -----------------------------------
