@@ -2,12 +2,27 @@ package rml.service;
 
 import java.util.List;
 
-import rml.pageModel.Menu;
+import rml.model.vo.Menu;
+import rml.model.vo.TreeNode;
 
 public interface MenuServiceI {
 
-	public List<Menu> getTreeNode(String id);
+	/**
+	 * treegrid
+	 * 
+	 * @param menu
+	 * @return
+	 */
+	public List<Menu> treegrid(Menu menu);
 	
-	public List<Menu> getAllTreeNode();
+	/**
+	 * get tree of menu
+	 * 
+	 * @param auth
+	 * @param b
+	 *            true/false - recursion of child nodes
+	 * @return
+	 */
+	public List<TreeNode> tree(Menu menu, Boolean b);
 
 }
