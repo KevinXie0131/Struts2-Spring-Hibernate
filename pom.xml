@@ -246,6 +246,9 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<version>3.0</version>
+				</configuration>
 			</plugin>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -255,7 +258,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		 <finalName>zhibing_ssh</finalName>
+		
+		<finalName>zhibing_ssh</finalName>
 	</build>
 	
 </project>
