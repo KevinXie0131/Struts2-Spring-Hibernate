@@ -1,7 +1,6 @@
 eclipse.preferences.version=1
-encoding//src/main/resources/struts.xml=UTF-8
-encoding//src/main/webapp/admin/Uploadify.jsp=UTF-8
-encoding//src/main/webapp/admin/auth.jsp=UTF-8
-encoding//src/main/webapp/admin/role.jsp=UTF-8
-encoding//src/main/webapp/error/500.jsp=UTF-8
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
 encoding/<project>=UTF-8
