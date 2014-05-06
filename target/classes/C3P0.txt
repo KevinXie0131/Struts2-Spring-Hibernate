@@ -1,0 +1,17 @@
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+        <property name="driverClass" value="${driverClassName}"/>
+        <property name="jdbcUrl" value="${jdbc_url}" />
+		<property name="user" value="${jdbc_username}" />
+		<property name="password" value="${jdbc_password}" />
+        
+        <property name="minPoolSize" value="5" />
+		<property name="maxPoolSize" value="30" />
+		<property name="initialPoolSize" value="10"/>
+		<property name="maxIdleTime" value="60"/>
+		<property name="acquireIncrement" value="5" />
+		<property name="maxStatements" value="0" />
+		<property name="checkoutTimeout" value="1000" />
+		<property name="idleConnectionTestPeriod" value="60" />
+		<property name="acquireRetryAttempts" value="30" />
+		<property name="breakAfterAcquireFailure" value="true" />
+    </bean>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<!-- spring in charge of creation of action object -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- *.action request for struts2 -->
+	<constant name="struts.action.extension" value="action" />
+	<!-- development mode -->
+	<constant name="struts.devMode" value="true" />
+	<!-- reload after change of struts config file -->
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<!-- static browser cache -->
+	<constant name="struts.serve.static.browserCache" value="false" />
+	<!-- encoding for request parameter -->
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<!-- reload config file for http (for development) -->
+	<constant name="struts.i18n.reload" value="true" />
+	<!-- max size of upload file -->
+	<constant name="struts.multipart.maxSize" value="104857600" />
+	<!-- dynamic method invocation in struts2 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<!-- slashes in action names -->
+	<constant name="struts.enable.SlashesInActionNames" value="false" />
+	<!-- alt syntax for tag -->
+	<constant name="struts.tag.altSyntax" value="true" />
+	<!-- for WebLogic,Orion,OC4J, this parameter is true -->
+	<constant name="struts.dispatcher.parametersWorkaround" value="false" />
+
+	<package name="basePackage" extends="struts-default">
+		<interceptors>
+			<!-- encoding interceptor -->
+			<interceptor name="encodingInterceptor" class="rml.interceptor.EncodingInterceptor" />
+			<interceptor-stack name="encodingStack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="encodingInterceptor"></interceptor-ref>
+			</interceptor-stack>
+			<!-- session interceptor -->
+			<interceptor name="sessionInterceptor" class="rml.interceptor.SessionInterceptor" />
+			<interceptor-stack name="sessionStack">
+				<interceptor-ref name="encodingStack"></interceptor-ref>
+				<interceptor-ref name="sessionInterceptor">
+					<param name="excludeMethods">doNotNeedSession_*</param>
+				</interceptor-ref>
+			</interceptor-stack>
+			<!-- authority interceptor -->
+			<interceptor name="authInterceptor" class="rml.interceptor.AuthInterceptor" />
+			<interceptor-stack name="authStack">
+				<interceptor-ref name="sessionStack"></interceptor-ref>
+				<interceptor-ref name="authInterceptor">
+					<param name="excludeMethods">doNotNeedSession_*,doNotNeedAuth_*</param>
+				</interceptor-ref>
+			</interceptor-stack>
+
+		</interceptors>
+		<!-- interceptor stack-->
+		<default-interceptor-ref name="authStack"></default-interceptor-ref>
+
+		<global-results>
+			<result name="noAuth">/error/404.jsp</result>
+			<result name="noSession">/error/404.jsp</result>
+			<result name="strutsException">/error/strutsException.jsp</result>
+		</global-results>
+
+		<global-exception-mappings>
+			<exception-mapping result="strutsException" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+
+	</package>
+
+</struts>
