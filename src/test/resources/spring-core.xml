@@ -19,5 +19,5 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 	<context:component-scan base-package="rml.dao,rml.service" />
 
 	<aop:aspectj-autoproxy />
-   
+    
 </beans>
