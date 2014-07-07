@@ -29,7 +29,7 @@ Demo Link
 About
 -----------------------------------
 * [Github link](https://github.com/ZhibingXie)
-* [Linkedin link](http://www.linkedin.com/pub/zhibing-xie/45/555/b28)
+* [Linkedin link](http://www.linkedin.com/in/zhibingxie)
     
 Contact
 -----------------------------------
