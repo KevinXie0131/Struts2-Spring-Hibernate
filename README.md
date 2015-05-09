@@ -22,11 +22,7 @@ System Features
 * Frontend and backend communicate by JSON
 * Cross-browser compatibility of Chrome/Firefox/IE
 
-Demo Link
------------------------------------
-[Struts2-Spring-Hibernate](http://141.117.68.121/zhibing_ssh/)
-
-About
+sAbout
 -----------------------------------
 * [Github link](https://github.com/ZhibingXie)
 * [Linkedin link](http://www.linkedin.com/in/zhibingxie)
